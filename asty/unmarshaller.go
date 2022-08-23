@@ -13,8 +13,6 @@ func init() {
 	}
 }
 
-// TODO: implement positions and comments unmarshalling
-
 type Unmarshaller struct {
 }
 
@@ -22,11 +20,47 @@ func NewUnmarshaller() *Unmarshaller {
 	return &Unmarshaller{}
 }
 
+func (um *Unmarshaller) UnmarshalPositionNode(pos *PositionNode) token.Pos {
+	return token.Pos(pos.Offset)
+}
+
+func (um *Unmarshaller) UnmarshalCommentNode(node *CommentNode) *ast.Comment {
+	if node == nil {
+		return nil
+	}
+	return &ast.Comment{
+		Slash: um.UnmarshalPositionNode(node.Slash),
+		Text:  node.Text,
+	}
+}
+
+func (um *Unmarshaller) UnmarshalCommentNodes(nodes []*CommentNode) []*ast.Comment {
+	if nodes == nil {
+		return nil
+	}
+	comments := make([]*ast.Comment, len(nodes))
+	for index, node := range nodes {
+		comments[index] = um.UnmarshalCommentNode(node)
+	}
+	return comments
+}
+
+func (um *Unmarshaller) UnmarshalCommentGroupNode(doc *CommentGroupNode) *ast.CommentGroup {
+	if doc == nil {
+		return nil
+	}
+	return &ast.CommentGroup{
+		List: um.UnmarshalCommentNodes(doc.List),
+	}
+}
+
 func (um *Unmarshaller) UnmarshalFieldNode(node *FieldNode) *ast.Field {
 	return &ast.Field{
-		Names: um.UnmarshalIdentNodes(node.Names),
-		Type:  um.UnmarshalExpr(node.Type),
-		Tag:   um.UnmarshalBasicLitNode(node.Tag),
+		Doc:     um.UnmarshalCommentGroupNode(node.Doc),
+		Names:   um.UnmarshalIdentNodes(node.Names),
+		Type:    um.UnmarshalExpr(node.Type),
+		Tag:     um.UnmarshalBasicLitNode(node.Tag),
+		Comment: um.UnmarshalCommentGroupNode(node.Comment),
 	}
 }
 
@@ -46,12 +80,17 @@ func (um *Unmarshaller) UnmarshalFieldListNode(node *FieldListNode) *ast.FieldLi
 		return nil
 	}
 	return &ast.FieldList{
-		List: um.UnmarshalFieldNodes(node.List),
+		Opening: um.UnmarshalPositionNode(node.Opening),
+		List:    um.UnmarshalFieldNodes(node.List),
+		Closing: um.UnmarshalPositionNode(node.Closing),
 	}
 }
 
-func (um *Unmarshaller) UnmarshalBadExprNode(_ *BadExprNode) *ast.BadExpr {
-	return &ast.BadExpr{}
+func (um *Unmarshaller) UnmarshalBadExprNode(node *BadExprNode) *ast.BadExpr {
+	return &ast.BadExpr{
+		From: um.UnmarshalPositionNode(node.From),
+		To:   um.UnmarshalPositionNode(node.To),
+	}
 }
 
 func (um *Unmarshaller) UnmarshalIdentNode(node *IdentNode) *ast.Ident {
@@ -59,7 +98,8 @@ func (um *Unmarshaller) UnmarshalIdentNode(node *IdentNode) *ast.Ident {
 		return nil
 	}
 	return &ast.Ident{
-		Name: node.Name,
+		NamePos: um.UnmarshalPositionNode(node.NamePos),
+		Name:    node.Name,
 	}
 }
 
@@ -76,7 +116,8 @@ func (um *Unmarshaller) UnmarshalIdentNodes(nodes []*IdentNode) []*ast.Ident {
 
 func (um *Unmarshaller) UnmarshalEllipsisNode(node *EllipsisNode) *ast.Ellipsis {
 	return &ast.Ellipsis{
-		Elt: um.UnmarshalExpr(node.Elt),
+		Ellipsis: um.UnmarshalPositionNode(node.Ellipsis),
+		Elt:      um.UnmarshalExpr(node.Elt),
 	}
 }
 func (um *Unmarshaller) UnmarshalBasicLitNode(node *BasicLitNode) *ast.BasicLit {
@@ -88,8 +129,9 @@ func (um *Unmarshaller) UnmarshalBasicLitNode(node *BasicLitNode) *ast.BasicLit 
 		panic("unsupported token kind " + node.Kind)
 	}
 	return &ast.BasicLit{
-		Kind:  kind,
-		Value: node.Value,
+		ValuePos: um.UnmarshalPositionNode(node.ValuePos),
+		Kind:     kind,
+		Value:    node.Value,
 	}
 }
 
@@ -102,13 +144,19 @@ func (um *Unmarshaller) UnmarshalFuncLitNode(node *FuncLitNode) *ast.FuncLit {
 
 func (um *Unmarshaller) UnmarshalCompositeLitNode(node *CompositeLitNode) *ast.CompositeLit {
 	return &ast.CompositeLit{
-		Type: um.UnmarshalExpr(node.Type),
+		Type:       um.UnmarshalExpr(node.Type),
+		Lbrace:     um.UnmarshalPositionNode(node.Lbrace),
+		Elts:       um.UnmarshalExprNodes(node.Elts),
+		Rbrace:     um.UnmarshalPositionNode(node.Rbrace),
+		Incomplete: node.Incomplete,
 	}
 }
 
 func (um *Unmarshaller) UnmarshalParenExprNode(node *ParenExprNode) *ast.ParenExpr {
 	return &ast.ParenExpr{
-		X: um.UnmarshalExpr(node.X),
+		Lparen: um.UnmarshalPositionNode(node.Lparen),
+		X:      um.UnmarshalExpr(node.X),
+		Rparen: um.UnmarshalPositionNode(node.Rparen),
 	}
 }
 
@@ -121,8 +169,10 @@ func (um *Unmarshaller) UnmarshalSelectorExprNode(node *SelectorExprNode) *ast.S
 
 func (um *Unmarshaller) UnmarshalIndexExprNode(node *IndexExprNode) *ast.IndexExpr {
 	return &ast.IndexExpr{
-		X:     um.UnmarshalExpr(node.X),
-		Index: um.UnmarshalExpr(node.Index),
+		X:      um.UnmarshalExpr(node.X),
+		Lbrack: um.UnmarshalPositionNode(node.Lbrack),
+		Index:  um.UnmarshalExpr(node.Index),
+		Rbrack: um.UnmarshalPositionNode(node.Rbrack),
 	}
 }
 
@@ -140,71 +190,86 @@ func (um *Unmarshaller) UnmarshalExprNodes(nodes []IExprNode) []ast.Expr {
 func (um *Unmarshaller) UnmarshalIndexListExprNode(node *IndexListExprNode) *ast.IndexListExpr {
 	return &ast.IndexListExpr{
 		X:       um.UnmarshalExpr(node.X),
+		Lbrack:  um.UnmarshalPositionNode(node.Lbrack),
 		Indices: um.UnmarshalExprNodes(node.Indices),
+		Rbrack:  um.UnmarshalPositionNode(node.Rbrack),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalSliceExprNode(node *SliceExprNode) *ast.SliceExpr {
 	return &ast.SliceExpr{
 		X:      um.UnmarshalExpr(node.X),
+		Lbrack: um.UnmarshalPositionNode(node.Lbrack),
 		Low:    um.UnmarshalExpr(node.Low),
 		High:   um.UnmarshalExpr(node.High),
 		Max:    um.UnmarshalExpr(node.Max),
 		Slice3: node.Slice3,
+		Rbrack: um.UnmarshalPositionNode(node.Rbrack),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalTypeAssertExprNode(node *TypeAssertExprNode) *ast.TypeAssertExpr {
 	return &ast.TypeAssertExpr{
-		X:    um.UnmarshalExpr(node.X),
-		Type: um.UnmarshalExpr(node.Type),
+		X:      um.UnmarshalExpr(node.X),
+		Lparen: um.UnmarshalPositionNode(node.Lparen),
+		Type:   um.UnmarshalExpr(node.Type),
+		Rparen: um.UnmarshalPositionNode(node.Rparen),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalCallExprNode(node *CallExprNode) *ast.CallExpr {
 	return &ast.CallExpr{
-		Fun:  um.UnmarshalExpr(node.Fun),
-		Args: um.UnmarshalExprNodes(node.Args),
+		Fun:      um.UnmarshalExpr(node.Fun),
+		Lparen:   um.UnmarshalPositionNode(node.Lparen),
+		Args:     um.UnmarshalExprNodes(node.Args),
+		Ellipsis: um.UnmarshalPositionNode(node.Ellipsis),
+		Rparen:   um.UnmarshalPositionNode(node.Rparen),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalStarExprNode(node *StarExprNode) *ast.StarExpr {
 	return &ast.StarExpr{
-		X: um.UnmarshalExpr(node.X),
+		Star: um.UnmarshalPositionNode(node.Star),
+		X:    um.UnmarshalExpr(node.X),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalUnaryExprNode(node *UnaryExprNode) *ast.UnaryExpr {
 	return &ast.UnaryExpr{
-		Op: StringToToken[node.Op],
-		X:  um.UnmarshalExpr(node.X),
+		OpPos: um.UnmarshalPositionNode(node.OpPos),
+		Op:    StringToToken[node.Op],
+		X:     um.UnmarshalExpr(node.X),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalBinaryExprNode(node *BinaryExprNode) *ast.BinaryExpr {
 	return &ast.BinaryExpr{
-		X:  um.UnmarshalExpr(node.X),
-		Op: StringToToken[node.Op],
-		Y:  um.UnmarshalExpr(node.Y),
+		X:     um.UnmarshalExpr(node.X),
+		OpPos: um.UnmarshalPositionNode(node.OpPos),
+		Op:    StringToToken[node.Op],
+		Y:     um.UnmarshalExpr(node.Y),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalKeyValueExprNode(node *KeyValueExprNode) *ast.KeyValueExpr {
 	return &ast.KeyValueExpr{
 		Key:   um.UnmarshalExpr(node.Key),
+		Colon: um.UnmarshalPositionNode(node.Colon),
 		Value: um.UnmarshalExpr(node.Value),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalArrayTypeNode(node *ArrayTypeNode) *ast.ArrayType {
 	return &ast.ArrayType{
-		Len: um.UnmarshalExpr(node.Len),
-		Elt: um.UnmarshalExpr(node.Elt),
+		Lbrack: um.UnmarshalPositionNode(node.Lbrack),
+		Len:    um.UnmarshalExpr(node.Len),
+		Elt:    um.UnmarshalExpr(node.Elt),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalStructTypeNode(node *StructTypeNode) *ast.StructType {
 	return &ast.StructType{
+		Struct:     um.UnmarshalPositionNode(node.Struct),
 		Fields:     um.UnmarshalFieldListNode(node.Fields),
 		Incomplete: node.Incomplete,
 	}
@@ -212,6 +277,7 @@ func (um *Unmarshaller) UnmarshalStructTypeNode(node *StructTypeNode) *ast.Struc
 
 func (um *Unmarshaller) UnmarshalFuncTypeNode(node *FuncTypeNode) *ast.FuncType {
 	return &ast.FuncType{
+		Func:       um.UnmarshalPositionNode(node.Func),
 		TypeParams: um.UnmarshalFieldListNode(node.TypeParams),
 		Params:     um.UnmarshalFieldListNode(node.Params),
 		Results:    um.UnmarshalFieldListNode(node.Results),
@@ -220,6 +286,7 @@ func (um *Unmarshaller) UnmarshalFuncTypeNode(node *FuncTypeNode) *ast.FuncType 
 
 func (um *Unmarshaller) UnmarshalInterfaceTypeNode(node *InterfaceTypeNode) *ast.InterfaceType {
 	return &ast.InterfaceType{
+		Interface:  um.UnmarshalPositionNode(node.Interface),
 		Methods:    um.UnmarshalFieldListNode(node.Methods),
 		Incomplete: node.Incomplete,
 	}
@@ -227,6 +294,7 @@ func (um *Unmarshaller) UnmarshalInterfaceTypeNode(node *InterfaceTypeNode) *ast
 
 func (um *Unmarshaller) UnmarshalMapTypeNode(node *MapTypeNode) *ast.MapType {
 	return &ast.MapType{
+		Map:   um.UnmarshalPositionNode(node.Map),
 		Key:   um.UnmarshalExpr(node.Key),
 		Value: um.UnmarshalExpr(node.Value),
 	}
@@ -239,13 +307,18 @@ var StringToChanDir = map[string]ast.ChanDir{
 
 func (um *Unmarshaller) UnmarshalChanTypeNode(node *ChanTypeNode) *ast.ChanType {
 	return &ast.ChanType{
+		Begin: um.UnmarshalPositionNode(node.Begin),
+		Arrow: um.UnmarshalPositionNode(node.Arrow),
 		Dir:   StringToChanDir[node.Dir],
 		Value: um.UnmarshalExpr(node.Value),
 	}
 }
 
-func (um *Unmarshaller) UnmarshalBadStmtNode(_ *BadStmtNode) *ast.BadStmt {
-	return &ast.BadStmt{}
+func (um *Unmarshaller) UnmarshalBadStmtNode(node *BadStmtNode) *ast.BadStmt {
+	return &ast.BadStmt{
+		From: um.UnmarshalPositionNode(node.From),
+		To:   um.UnmarshalPositionNode(node.To),
+	}
 }
 
 func (um *Unmarshaller) UnmarshalDeclStmtNode(node *DeclStmtNode) *ast.DeclStmt {
@@ -254,13 +327,17 @@ func (um *Unmarshaller) UnmarshalDeclStmtNode(node *DeclStmtNode) *ast.DeclStmt 
 	}
 }
 
-func (um *Unmarshaller) UnmarshalEmptyStmtNode(_ *EmptyStmtNode) *ast.EmptyStmt {
-	return &ast.EmptyStmt{}
+func (um *Unmarshaller) UnmarshalEmptyStmtNode(node *EmptyStmtNode) *ast.EmptyStmt {
+	return &ast.EmptyStmt{
+		Semicolon: um.UnmarshalPositionNode(node.Semicolon),
+		Implicit:  node.Implicit,
+	}
 }
 
 func (um *Unmarshaller) UnmarshalLabeledStmtNode(node *LabeledStmtNode) *ast.LabeledStmt {
 	return &ast.LabeledStmt{
 		Label: um.UnmarshalIdentNode(node.Label),
+		Colon: um.UnmarshalPositionNode(node.Colon),
 		Stmt:  um.UnmarshalStmt(node.Stmt),
 	}
 }
@@ -274,47 +351,54 @@ func (um *Unmarshaller) UnmarshalExprStmtNode(node *ExprStmtNode) *ast.ExprStmt 
 func (um *Unmarshaller) UnmarshalSendStmtNode(node *SendStmtNode) *ast.SendStmt {
 	return &ast.SendStmt{
 		Chan:  um.UnmarshalExpr(node.Chan),
+		Arrow: um.UnmarshalPositionNode(node.Arrow),
 		Value: um.UnmarshalExpr(node.Value),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalIncDecStmtNode(node *IncDecStmtNode) *ast.IncDecStmt {
 	return &ast.IncDecStmt{
-		X:   um.UnmarshalExpr(node.X),
-		Tok: StringToToken[node.Tok],
+		X:      um.UnmarshalExpr(node.X),
+		TokPos: um.UnmarshalPositionNode(node.TokPos),
+		Tok:    StringToToken[node.Tok],
 	}
 }
 
 func (um *Unmarshaller) UnmarshalAssignStmtNode(node *AssignStmtNode) *ast.AssignStmt {
 	return &ast.AssignStmt{
-		Lhs: um.UnmarshalExprNodes(node.Lhs),
-		Tok: StringToToken[node.Tok],
-		Rhs: um.UnmarshalExprNodes(node.Rhs),
+		Lhs:    um.UnmarshalExprNodes(node.Lhs),
+		TokPos: um.UnmarshalPositionNode(node.TokPos),
+		Tok:    StringToToken[node.Tok],
+		Rhs:    um.UnmarshalExprNodes(node.Rhs),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalGoStmtNode(node *GoStmtNode) *ast.GoStmt {
 	return &ast.GoStmt{
+		Go:   um.UnmarshalPositionNode(node.Go),
 		Call: um.UnmarshalCallExprNode(node.Call),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalDeferStmtNode(node *DeferStmtNode) *ast.DeferStmt {
 	return &ast.DeferStmt{
-		Call: um.UnmarshalCallExprNode(node.Call),
+		Defer: um.UnmarshalPositionNode(node.Defer),
+		Call:  um.UnmarshalCallExprNode(node.Call),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalReturnStmtNode(node *ReturnStmtNode) *ast.ReturnStmt {
 	return &ast.ReturnStmt{
+		Return:  um.UnmarshalPositionNode(node.Return),
 		Results: um.UnmarshalExprNodes(node.Results),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalBranchStmtNode(node *BranchStmtNode) *ast.BranchStmt {
 	return &ast.BranchStmt{
-		Tok:   StringToToken[node.Tok],
-		Label: um.UnmarshalIdentNode(node.Label),
+		TokPos: um.UnmarshalPositionNode(node.TokPos),
+		Tok:    StringToToken[node.Tok],
+		Label:  um.UnmarshalIdentNode(node.Label),
 	}
 }
 
@@ -331,12 +415,15 @@ func (um *Unmarshaller) UnmarshalStmtNodes(nodes []IStmtNode) []ast.Stmt {
 
 func (um *Unmarshaller) UnmarshalBlockStmtNode(node *BlockStmtNode) *ast.BlockStmt {
 	return &ast.BlockStmt{
-		List: um.UnmarshalStmtNodes(node.List),
+		Lbrace: um.UnmarshalPositionNode(node.Lbrace),
+		List:   um.UnmarshalStmtNodes(node.List),
+		Rbrace: um.UnmarshalPositionNode(node.Rbrace),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalIfStmtNode(node *IfStmtNode) *ast.IfStmt {
 	return &ast.IfStmt{
+		If:   um.UnmarshalPositionNode(node.If),
 		Init: um.UnmarshalStmt(node.Init),
 		Cond: um.UnmarshalExpr(node.Cond),
 		Body: um.UnmarshalBlockStmtNode(node.Body),
@@ -346,21 +433,25 @@ func (um *Unmarshaller) UnmarshalIfStmtNode(node *IfStmtNode) *ast.IfStmt {
 
 func (um *Unmarshaller) UnmarshalCaseClauseNode(node *CaseClauseNode) *ast.CaseClause {
 	return &ast.CaseClause{
-		List: um.UnmarshalExprNodes(node.List),
-		Body: um.UnmarshalStmtNodes(node.Body),
+		Case:  um.UnmarshalPositionNode(node.Case),
+		List:  um.UnmarshalExprNodes(node.List),
+		Colon: um.UnmarshalPositionNode(node.Colon),
+		Body:  um.UnmarshalStmtNodes(node.Body),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalSwitchStmtNode(node *SwitchStmtNode) *ast.SwitchStmt {
 	return &ast.SwitchStmt{
-		Init: um.UnmarshalStmt(node.Init),
-		Tag:  um.UnmarshalExpr(node.Tag),
-		Body: um.UnmarshalBlockStmtNode(node.Body),
+		Switch: um.UnmarshalPositionNode(node.Switch),
+		Init:   um.UnmarshalStmt(node.Init),
+		Tag:    um.UnmarshalExpr(node.Tag),
+		Body:   um.UnmarshalBlockStmtNode(node.Body),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalTypeSwitchStmtNode(node *TypeSwitchStmtNode) *ast.TypeSwitchStmt {
 	return &ast.TypeSwitchStmt{
+		Switch: um.UnmarshalPositionNode(node.Switch),
 		Init:   um.UnmarshalStmt(node.Init),
 		Assign: um.UnmarshalStmt(node.Assign),
 		Body:   um.UnmarshalBlockStmtNode(node.Body),
@@ -369,19 +460,23 @@ func (um *Unmarshaller) UnmarshalTypeSwitchStmtNode(node *TypeSwitchStmtNode) *a
 
 func (um *Unmarshaller) UnmarshalCommClauseNode(node *CommClauseNode) *ast.CommClause {
 	return &ast.CommClause{
-		Comm: um.UnmarshalStmt(node.Comm),
-		Body: um.UnmarshalStmtNodes(node.Body),
+		Case:  um.UnmarshalPositionNode(node.Case),
+		Comm:  um.UnmarshalStmt(node.Comm),
+		Colon: um.UnmarshalPositionNode(node.Colon),
+		Body:  um.UnmarshalStmtNodes(node.Body),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalSelectStmtNode(node *SelectStmtNode) *ast.SelectStmt {
 	return &ast.SelectStmt{
-		Body: um.UnmarshalBlockStmtNode(node.Body),
+		Select: um.UnmarshalPositionNode(node.Select),
+		Body:   um.UnmarshalBlockStmtNode(node.Body),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalForStmtNode(node *ForStmtNode) *ast.ForStmt {
 	return &ast.ForStmt{
+		For:  um.UnmarshalPositionNode(node.For),
 		Init: um.UnmarshalStmt(node.Init),
 		Cond: um.UnmarshalExpr(node.Cond),
 		Post: um.UnmarshalStmt(node.Post),
@@ -391,34 +486,44 @@ func (um *Unmarshaller) UnmarshalForStmtNode(node *ForStmtNode) *ast.ForStmt {
 
 func (um *Unmarshaller) UnmarshalRangeStmtNode(node *RangeStmtNode) *ast.RangeStmt {
 	return &ast.RangeStmt{
-		Key:   um.UnmarshalExpr(node.Key),
-		Value: um.UnmarshalExpr(node.Value),
-		Tok:   StringToToken[node.Tok],
-		X:     um.UnmarshalExpr(node.X),
-		Body:  um.UnmarshalBlockStmtNode(node.Body),
+		For:    um.UnmarshalPositionNode(node.For),
+		Key:    um.UnmarshalExpr(node.Key),
+		Value:  um.UnmarshalExpr(node.Value),
+		TokPos: um.UnmarshalPositionNode(node.TokPos),
+		Tok:    StringToToken[node.Tok],
+		X:      um.UnmarshalExpr(node.X),
+		Body:   um.UnmarshalBlockStmtNode(node.Body),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalImportSpecNode(node *ImportSpecNode) *ast.ImportSpec {
 	return &ast.ImportSpec{
-		Name: um.UnmarshalIdentNode(node.Name),
-		Path: um.UnmarshalBasicLitNode(node.Path),
+		Doc:     um.UnmarshalCommentGroupNode(node.Doc),
+		Name:    um.UnmarshalIdentNode(node.Name),
+		Path:    um.UnmarshalBasicLitNode(node.Path),
+		Comment: um.UnmarshalCommentGroupNode(node.Comment),
+		EndPos:  um.UnmarshalPositionNode(node.EndPos),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalValueSpecNode(node *ValueSpecNode) *ast.ValueSpec {
 	return &ast.ValueSpec{
-		Names:  um.UnmarshalIdentNodes(node.Names),
-		Type:   um.UnmarshalExpr(node.Type),
-		Values: um.UnmarshalExprNodes(node.Values),
+		Doc:     um.UnmarshalCommentGroupNode(node.Doc),
+		Names:   um.UnmarshalIdentNodes(node.Names),
+		Type:    um.UnmarshalExpr(node.Type),
+		Values:  um.UnmarshalExprNodes(node.Values),
+		Comment: um.UnmarshalCommentGroupNode(node.Comment),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalTypeSpecNode(node *TypeSpecNode) *ast.TypeSpec {
 	return &ast.TypeSpec{
+		Doc:        um.UnmarshalCommentGroupNode(node.Doc),
 		Name:       um.UnmarshalIdentNode(node.Name),
 		TypeParams: um.UnmarshalFieldListNode(node.TypeParams),
+		Assign:     um.UnmarshalPositionNode(node.Assign),
 		Type:       um.UnmarshalExpr(node.Type),
+		Comment:    um.UnmarshalCommentGroupNode(node.Comment),
 	}
 }
 
@@ -433,20 +538,27 @@ func (um *Unmarshaller) UnmarshalSpecNodes(nodes []ISpecNode) []ast.Spec {
 	return specs
 }
 
-func (um *Unmarshaller) UnmarshalBadDeclNode(_ *BadDeclNode) *ast.BadDecl {
-	return &ast.BadDecl{}
+func (um *Unmarshaller) UnmarshalBadDeclNode(node *BadDeclNode) *ast.BadDecl {
+	return &ast.BadDecl{
+		From: um.UnmarshalPositionNode(node.From),
+		To:   um.UnmarshalPositionNode(node.To),
+	}
 }
 
 func (um *Unmarshaller) UnmarshalGenDeclNode(node *GenDeclNode) *ast.GenDecl {
-
 	return &ast.GenDecl{
-		Tok:   StringToToken[node.Tok],
-		Specs: um.UnmarshalSpecNodes(node.Specs),
+		Doc:    um.UnmarshalCommentGroupNode(node.Doc),
+		TokPos: um.UnmarshalPositionNode(node.TokPos),
+		Tok:    StringToToken[node.Tok],
+		Lparen: um.UnmarshalPositionNode(node.Lparen),
+		Specs:  um.UnmarshalSpecNodes(node.Specs),
+		Rparen: um.UnmarshalPositionNode(node.Rparen),
 	}
 }
 
 func (um *Unmarshaller) UnmarshalFuncDeclNode(node *FuncDeclNode) *ast.FuncDecl {
 	return &ast.FuncDecl{
+		Doc:  um.UnmarshalCommentGroupNode(node.Doc),
 		Recv: um.UnmarshalFieldListNode(node.Recv),
 		Name: um.UnmarshalIdentNode(node.Name),
 		Type: um.UnmarshalFuncTypeNode(node.Type),
@@ -467,8 +579,14 @@ func (um *Unmarshaller) UnmarshalDeclNodes(nodes []IDeclNode) []ast.Decl {
 
 func (um *Unmarshaller) UnmarshalFileNode(node *FileNode) *ast.File {
 	return &ast.File{
-		Name:  um.UnmarshalIdentNode(node.Name),
-		Decls: um.UnmarshalDeclNodes(node.Decls),
+		Doc:     um.UnmarshalCommentGroupNode(node.Doc),
+		Package: um.UnmarshalPositionNode(node.Package),
+		Name:    um.UnmarshalIdentNode(node.Name),
+		Decls:   um.UnmarshalDeclNodes(node.Decls),
+		// TODO
+		//Imports:    um.UnmarshalImportDeclNodes(node.Imports),
+		//Unresolved: um.UnmarshalIdentNodes(node.Unresolved),
+		//Comments:   um.UnmarshalCommentGroupNodes(node.Comments),
 	}
 }
 
