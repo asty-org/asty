@@ -65,11 +65,35 @@ func (m *Marshaller) MarshalPosition(pos token.Pos) *PositionNode {
 }
 
 func (m *Marshaller) MarshalComment(comment *ast.Comment) *CommentNode {
-	return nil // TODO: implement
+	if comment == nil {
+		return nil
+	}
+	return &CommentNode{
+		Node:  m.MarshalNode("Comment"),
+		Slash: m.MarshalPosition(comment.Slash),
+		Text:  comment.Text,
+	}
 }
 
-func (m *Marshaller) MarshalCommentGroup(comment *ast.CommentGroup) *CommentGroupNode {
-	return nil // TODO: implement
+func (m *Marshaller) MarshalComments(node []*ast.Comment) []*CommentNode {
+	if node == nil {
+		return nil
+	}
+	nodes := make([]*CommentNode, len(node))
+	for index, comment := range node {
+		nodes[index] = m.MarshalComment(comment)
+	}
+	return nodes
+}
+
+func (m *Marshaller) MarshalCommentGroup(group *ast.CommentGroup) *CommentGroupNode {
+	if group == nil {
+		return nil
+	}
+	return &CommentGroupNode{
+		Node: m.MarshalNode("CommentGroup"),
+		List: m.MarshalComments(group.List),
+	}
 }
 
 // ---------------------------------------------------------------------------
