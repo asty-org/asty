@@ -21,6 +21,9 @@ func NewUnmarshaller() *Unmarshaller {
 }
 
 func (um *Unmarshaller) UnmarshalPositionNode(pos *PositionNode) token.Pos {
+	if pos == nil {
+		return token.NoPos
+	}
 	return token.Pos(pos.Offset)
 }
 
