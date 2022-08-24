@@ -14,13 +14,21 @@ func init() {
 }
 
 type Unmarshaller struct {
+	WithPositions bool
+	WithComments  bool
 }
 
-func NewUnmarshaller() *Unmarshaller {
-	return &Unmarshaller{}
+func NewUnmarshaller(withComments, withPositions bool) *Unmarshaller {
+	return &Unmarshaller{
+		WithComments:  withComments,
+		WithPositions: withPositions,
+	}
 }
 
 func (um *Unmarshaller) UnmarshalPositionNode(pos *PositionNode) token.Pos {
+	if !um.WithPositions {
+		return token.NoPos
+	}
 	if pos == nil {
 		return token.NoPos
 	}
@@ -49,6 +57,9 @@ func (um *Unmarshaller) UnmarshalCommentNodes(nodes []*CommentNode) []*ast.Comme
 }
 
 func (um *Unmarshaller) UnmarshalCommentGroupNode(doc *CommentGroupNode) *ast.CommentGroup {
+	if !um.WithComments {
+		return nil
+	}
 	if doc == nil {
 		return nil
 	}

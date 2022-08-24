@@ -9,10 +9,12 @@ import (
 type Marshaller struct {
 	fset          *token.FileSet
 	WithPositions bool
+	WithComments  bool
 }
 
-func NewMarshaller(withPositions bool) *Marshaller {
+func NewMarshaller(withComments, withPositions bool) *Marshaller {
 	return &Marshaller{
+		WithComments:  withComments,
 		WithPositions: withPositions,
 		fset:          token.NewFileSet(),
 	}
@@ -87,6 +89,9 @@ func (m *Marshaller) MarshalComments(node []*ast.Comment) []*CommentNode {
 }
 
 func (m *Marshaller) MarshalCommentGroup(group *ast.CommentGroup) *CommentGroupNode {
+	if !m.WithComments {
+		return nil
+	}
 	if group == nil {
 		return nil
 	}
