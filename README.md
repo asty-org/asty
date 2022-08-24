@@ -1,5 +1,7 @@
 # asty
 
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/asty-org/asty)
+
 _Not another JSON parser!_
 
 **AST &#8594; JSON** | **JSON &#8594; AST**
