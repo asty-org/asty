@@ -2,11 +2,11 @@
 
 _Not another JSON parser!_
 
-**AST -> JSON** | **JSON -> AST**
+**AST &#8594; JSON** | **JSON &#8594; AST**
 
-Marshals golang [AST](https://pkg.go.dev/go/ast) into JSON and unmarshals in back from JSON.
+Marshals golang [AST](https://pkg.go.dev/go/ast) into JSON and unmarshals it back from JSON.
 
-It allows to build pattern matching, statistical analysis, language transformation, search/data-mine/anything algorithms 
+It allows building pattern matching, statistical analysis, language transformation, search/data-mine/anything algorithms 
 for golang with any other language (I like to do it with python)
 
 ## Example
@@ -95,6 +95,25 @@ Ouput AST in JSON
   ]
 }
 ```
+
+## Building
+
+Just `make`
+If you want to do it differently use `go build`
+
+## Usage
+
+Convert AST to JSON
+```bash
+asty go2json -input <input.go> -output <output.json>
+```
+
+Convert JSON to AST
+```bash
+asty json2go -input <input.json> -output <output.go>
+```
+
+Use `asty help` for more information
 
 ## Development principles
 
