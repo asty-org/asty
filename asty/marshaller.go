@@ -57,7 +57,7 @@ func (m *Marshaller) MarshalPosition(pos token.Pos) *PositionNode {
 	if pos == token.NoPos {
 		return nil
 	}
-	position := m.fset.Position(pos)
+	position := m.fset.PositionFor(pos, false)
 	return &PositionNode{
 		Node:     m.MarshalNode("Position", nil),
 		Filename: position.Filename,

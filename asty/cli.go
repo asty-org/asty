@@ -2,7 +2,6 @@ package asty
 
 import (
 	"encoding/json"
-	"go/ast"
 	"go/parser"
 	"go/printer"
 	"go/token"
@@ -84,9 +83,6 @@ func Loop(input, output string, comments, positions bool) error {
 	if err != nil {
 		return err
 	}
-
-	f, _ := os.Create(output + "_")
-	ast.Fprint(f, fs, tree, nil)
 
 	outFile, err := os.Create(output)
 	if err != nil {
