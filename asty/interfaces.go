@@ -65,6 +65,7 @@ type IDeclUnmarshaller interface {
 }
 
 type INode interface {
+	GetRefId() int
 }
 
 type IDeclNode interface {

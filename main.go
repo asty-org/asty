@@ -2,81 +2,11 @@ package main
 
 import (
 	"asty/asty"
-	"encoding/json"
 	"flag"
 	"fmt"
-	"go/parser"
-	"go/printer"
-	"go/token"
 	"os"
 	"strings"
 )
-
-func SourceToJSON(input, output string, indent string, comments, positions bool) error {
-	marshaller := asty.NewMarshaller(comments, positions)
-	err := marshaller.AddFile(input)
-	if err != nil {
-		return err
-	}
-
-	tree, err := parser.ParseFile(marshaller.FileSet(), input, nil, parser.ParseComments)
-	if err != nil {
-		return err
-	}
-
-	node := marshaller.MarshalFile(tree)
-
-	outFile, err := os.Create(output)
-	if err != nil {
-		return err
-	}
-	encoder := json.NewEncoder(outFile)
-	encoder.SetIndent("", indent)
-	err = encoder.Encode(node)
-	if err != nil {
-		return err
-	}
-	err = outFile.Close()
-	if err != nil {
-		return err
-	}
-	return nil
-}
-
-func JSONToSource(input, output string, comments, positions bool) error {
-	inFile, err := os.Open(input)
-	if err != nil {
-		return err
-	}
-	var decoded asty.FileNode
-	decoder := json.NewDecoder(inFile)
-	err = decoder.Decode(&decoded)
-	if err != nil {
-		return err
-	}
-	err = inFile.Close()
-	if err != nil {
-		return err
-	}
-
-	unmarshaler := asty.NewUnmarshaller(comments, positions)
-	result := unmarshaler.UnmarshalFileNode(&decoded)
-	fset := &token.FileSet{}
-
-	outFile, err := os.Create(output)
-	if err != nil {
-		return err
-	}
-	err = printer.Fprint(outFile, fset, result)
-	if err != nil {
-		return err
-	}
-	err = outFile.Close()
-	if err != nil {
-		return err
-	}
-	return nil
-}
 
 const UsageString = `Usage: asty <command> [flags]
 commands:
@@ -97,6 +27,7 @@ func printError(err error) {
 }
 
 func main() {
+	fmt.Println(os.Getwd())
 	args := os.Args
 	var input, output string
 	var indent int
@@ -129,12 +60,12 @@ func main() {
 	switch args[1] {
 	case "go2json":
 		indentStr := strings.Repeat(" ", indent)
-		err := SourceToJSON(input, output, indentStr, comments, positions)
+		err := asty.SourceToJSON(input, output, indentStr, comments, positions)
 		if err != nil {
 			printError(err)
 		}
 	case "json2go":
-		err := JSONToSource(input, output, comments, positions)
+		err := asty.JSONToSource(input, output, comments, positions)
 		if err != nil {
 			printError(err)
 		}

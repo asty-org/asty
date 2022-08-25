@@ -3,18 +3,20 @@ package asty
 import (
 	"encoding/json"
 	"go/ast"
+	"go/token"
 )
 
 type Node struct {
 	NodeType string `json:"NodeType"`
+	RefId    int    `json:"RefId,omitempty"`
 }
 
 type PositionNode struct {
 	Node
-	Filename string `json:"Filename,omitempty"`
-	Offset   int    `json:"Offset,omitempty"`
-	Line     int    `json:"Line,omitempty"`
-	Column   int    `json:"Column,omitempty"`
+	Filename string `json:"Filename"`
+	Offset   int    `json:"Offset"`
+	Line     int    `json:"Line"`
+	Column   int    `json:"Column"`
 }
 
 type CommentNode struct {
@@ -674,10 +676,11 @@ type FileNode struct {
 	Doc        *CommentGroupNode   `json:"Doc,omitempty"`
 	Package    *PositionNode       `json:"Package,omitempty"`
 	Name       *IdentNode          `json:"Name"`
-	Decls      []IDeclNode         `json:"Decls"`
+	Decls      []IDeclNode         `json:"Decls,omitempty"`
 	Imports    []*ImportSpecNode   `json:"Imports,omitempty"`
 	Unresolved []*IdentNode        `json:"Unresolved,omitempty"`
 	Comments   []*CommentGroupNode `json:"Comments,omitempty"`
+	FileSet    *token.FileSet      `json:"FileSet,omitempty"`
 	//	Scope      *Scope
 }
 type FileNodeAlias struct {
@@ -689,6 +692,7 @@ type FileNodeAlias struct {
 	Imports    []*ImportSpecNode
 	Unresolved []*IdentNode
 	Comments   []*CommentGroupNode
+	FileSet    json.RawMessage
 	//	Scope      *Scope
 }
 
@@ -858,6 +862,8 @@ func MakeExpr(nodeType string) IExprNode {
 	switch nodeType {
 	case "BadExpr":
 		return &BadExprNode{}
+	case "Ellipsis":
+		return &EllipsisNode{}
 	case "Ident":
 		return &IdentNode{}
 	case "BasicLit":
@@ -872,6 +878,8 @@ func MakeExpr(nodeType string) IExprNode {
 		return &SelectorExprNode{}
 	case "IndexExpr":
 		return &IndexExprNode{}
+	case "IndexListExpr":
+		return &IndexListExprNode{}
 	case "SliceExpr":
 		return &SliceExprNode{}
 	case "TypeAssertExpr":
@@ -899,7 +907,7 @@ func MakeExpr(nodeType string) IExprNode {
 	case "ChanType":
 		return &ChanTypeNode{}
 	default:
-		panic("implement me")
+		panic("implement me " + nodeType)
 	}
 }
 
@@ -976,6 +984,230 @@ func MakeDecl(nodeType string) IDeclNode {
 	default:
 		panic("implement me")
 	}
+}
+
+func (node CommentNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node CommentGroupNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node FieldNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node FieldListNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node BadExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node IdentNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node EllipsisNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node BasicLitNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node FuncLitNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node CompositeLitNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node ParenExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node SelectorExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node IndexExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node IndexListExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node SliceExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node TypeAssertExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node CallExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node StarExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node UnaryExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node BinaryExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node KeyValueExprNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node ArrayTypeNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node StructTypeNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node FuncTypeNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node InterfaceTypeNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node MapTypeNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node ChanTypeNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node BadStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node DeclStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node EmptyStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node LabeledStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node ExprStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node SendStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node IncDecStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node AssignStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node GoStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node DeferStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node ReturnStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node BranchStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node BlockStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node IfStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node CaseClauseNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node SwitchStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node TypeSwitchStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node CommClauseNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node SelectStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node ForStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node RangeStmtNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node ImportSpecNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node ValueSpecNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node TypeSpecNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node BadDeclNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node GenDeclNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node FuncDeclNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node FileNode) GetRefId() int {
+	return node.RefId
+}
+
+func (node PackageNode) GetRefId() int {
+	return node.RefId
 }
 
 func UnmarshalJSONExpr(data json.RawMessage) (IExprNode, error) {
@@ -1110,6 +1342,21 @@ func UnmarshalJSONDecls(data []json.RawMessage) ([]IDeclNode, error) {
 	return result, nil
 }
 
+func MarshalJSONDecls(decls []IDeclNode) ([]json.RawMessage, error) {
+	if decls == nil {
+		return nil, nil
+	}
+	result := make([]json.RawMessage, len(decls))
+	for i, d := range decls {
+		data, err := json.Marshal(d)
+		if err != nil {
+			return nil, err
+		}
+		result[i] = data
+	}
+	return result, nil
+}
+
 func (node *FieldNode) UnmarshalJSON(data []byte) error {
 	var alias FieldNodeAlias
 	err := json.Unmarshal(data, &alias)
@@ -1117,7 +1364,7 @@ func (node *FieldNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Doc = alias.Doc
 	node.Names = alias.Names
 	node.Type, err = UnmarshalJSONExpr(alias.Type)
@@ -1136,7 +1383,7 @@ func (node *EllipsisNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Ellipsis = alias.Ellipsis
 	node.Elt, err = UnmarshalJSONExpr(alias.Elt)
 	if err != nil {
@@ -1152,7 +1399,7 @@ func (node *CompositeLitNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Type, err = UnmarshalJSONExpr(alias.Type)
 	if err != nil {
 		return err
@@ -1174,7 +1421,7 @@ func (node *ParenExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Lparen = alias.Lparen
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
@@ -1191,7 +1438,7 @@ func (node *SelectorExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
 		return err
@@ -1207,7 +1454,7 @@ func (node *IndexExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
 		return err
@@ -1228,7 +1475,7 @@ func (node *IndexListExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
 		return err
@@ -1249,7 +1496,7 @@ func (node *SliceExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
 		return err
@@ -1279,7 +1526,7 @@ func (node *TypeAssertExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
 		return err
@@ -1300,7 +1547,7 @@ func (node *CallExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Fun, err = UnmarshalJSONExpr(alias.Fun)
 	if err != nil {
 		return err
@@ -1322,7 +1569,7 @@ func (node *StarExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Star = alias.Star
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
@@ -1338,7 +1585,7 @@ func (node *UnaryExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.OpPos = alias.OpPos
 	node.Op = alias.Op
 	node.X, err = UnmarshalJSONExpr(alias.X)
@@ -1355,7 +1602,7 @@ func (node *BinaryExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
 		return err
@@ -1376,7 +1623,7 @@ func (node *KeyValueExprNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Key, err = UnmarshalJSONExpr(alias.Key)
 	if err != nil {
 		return err
@@ -1396,7 +1643,7 @@ func (node *ArrayTypeNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Lbrack = alias.Lbrack
 	node.Len, err = UnmarshalJSONExpr(alias.Len)
 	if err != nil {
@@ -1416,7 +1663,7 @@ func (node *MapTypeNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Map = alias.Map
 	node.Key, err = UnmarshalJSONExpr(alias.Key)
 	if err != nil {
@@ -1436,7 +1683,7 @@ func (node *ChanTypeNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Begin = alias.Begin
 	node.Arrow = alias.Arrow
 	node.Dir = alias.Dir
@@ -1454,7 +1701,7 @@ func (node *DeclStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Decl, err = UnmarshalJSONDecl(alias.Decl)
 	if err != nil {
 		return err
@@ -1469,7 +1716,7 @@ func (node *LabeledStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Label = alias.Label
 	node.Colon = alias.Colon
 	node.Stmt, err = UnmarshalJSONStmt(alias.Stmt)
@@ -1486,7 +1733,7 @@ func (node *ExprStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
 		return err
@@ -1501,7 +1748,7 @@ func (node *SendStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Chan, err = UnmarshalJSONExpr(alias.Chan)
 	if err != nil {
 		return err
@@ -1521,7 +1768,7 @@ func (node *IncDecStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.X, err = UnmarshalJSONExpr(alias.X)
 	if err != nil {
 		return err
@@ -1538,7 +1785,7 @@ func (node *AssignStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Lhs, err = UnmarshalJSONExprs(alias.Lhs)
 	if err != nil {
 		return err
@@ -1559,7 +1806,7 @@ func (node *ReturnStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Return = alias.Return
 	node.Results, err = UnmarshalJSONExprs(alias.Results)
 	if err != nil {
@@ -1575,7 +1822,7 @@ func (node *BlockStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Lbrace = alias.Lbrace
 	node.List, err = UnmarshalJSONStmts(alias.List)
 	if err != nil {
@@ -1592,7 +1839,7 @@ func (node *IfStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.If = alias.If
 	node.Init, err = UnmarshalJSONStmt(alias.Init)
 	if err != nil {
@@ -1620,7 +1867,7 @@ func (node *CaseClauseNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Case = alias.Case
 	node.List, err = UnmarshalJSONExprs(alias.List)
 	if err != nil {
@@ -1641,7 +1888,7 @@ func (node *SwitchStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Switch = alias.Switch
 	node.Init, err = UnmarshalJSONStmt(alias.Init)
 	if err != nil {
@@ -1662,7 +1909,7 @@ func (node *TypeSwitchStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Switch = alias.Switch
 	node.Init, err = UnmarshalJSONStmt(alias.Init)
 	if err != nil {
@@ -1683,7 +1930,7 @@ func (node *CommClauseNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Case = alias.Case
 	node.Comm, err = UnmarshalJSONStmt(alias.Comm)
 	if err != nil {
@@ -1704,7 +1951,7 @@ func (node *ForStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.For = alias.For
 	node.Init, err = UnmarshalJSONStmt(alias.Init)
 	if err != nil {
@@ -1729,7 +1976,7 @@ func (node *RangeStmtNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.For = alias.For
 	node.Key, err = UnmarshalJSONExpr(alias.Key)
 	if err != nil {
@@ -1756,7 +2003,7 @@ func (node *ValueSpecNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Doc = alias.Doc
 	node.Names = alias.Names
 	node.Type, err = UnmarshalJSONExpr(alias.Type)
@@ -1778,7 +2025,7 @@ func (node *TypeSpecNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Doc = alias.Doc
 	node.Name = alias.Name
 	node.TypeParams = alias.TypeParams
@@ -1798,7 +2045,7 @@ func (node *GenDeclNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Doc = alias.Doc
 	node.TokPos = alias.TokPos
 	node.Tok = alias.Tok
@@ -1818,7 +2065,7 @@ func (node *FileNode) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	node.NodeType = alias.NodeType
+	node.Node = alias.Node
 	node.Doc = alias.Doc
 	node.Package = alias.Package
 	node.Name = alias.Name
@@ -1829,5 +2076,42 @@ func (node *FileNode) UnmarshalJSON(data []byte) error {
 	node.Imports = alias.Imports
 	node.Unresolved = alias.Unresolved
 	node.Comments = alias.Comments
+	node.FileSet = token.NewFileSet()
+
+	err = node.FileSet.Read(func(dest any) error {
+		return json.Unmarshal(alias.FileSet, dest)
+	})
+	if err != nil {
+		return err
+	}
+
 	return nil
+}
+
+func (node *FileNode) MarshalJSON() ([]byte, error) {
+	alias := &FileNodeAlias{}
+	alias.Node = node.Node
+	alias.Doc = node.Doc
+	alias.Package = node.Package
+	alias.Name = node.Name
+	decls, err := MarshalJSONDecls(node.Decls)
+	if err != nil {
+		return nil, err
+	}
+	alias.Decls = decls
+	alias.Imports = node.Imports
+	alias.Unresolved = node.Unresolved
+	alias.Comments = node.Comments
+	err = node.FileSet.Write(func(src any) error {
+		data, err := json.Marshal(src)
+		alias.FileSet = data
+		if err != nil {
+			return err
+		}
+		return nil
+	})
+	if err != nil {
+		return nil, err
+	}
+	return json.Marshal(alias)
 }
