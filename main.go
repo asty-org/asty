@@ -27,7 +27,6 @@ func printError(err error) {
 }
 
 func main() {
-	fmt.Println(os.Getwd())
 	args := os.Args
 	var input, output string
 	var indent int
