@@ -7,20 +7,23 @@ import (
 )
 
 type Marshaller struct {
-	fset          *token.FileSet
-	WithPositions bool
-	WithComments  bool
-	references    map[any]any
-	refcount      int
+	WithPositions  bool
+	WithComments   bool
+	WithReferences bool
+
+	fset       *token.FileSet
+	references map[any]any
+	refcount   int
 }
 
-func NewMarshaller(withComments, withPositions bool) *Marshaller {
+func NewMarshaller(withComments, withPositions, withReferences bool) *Marshaller {
 	return &Marshaller{
-		WithComments:  withComments,
-		WithPositions: withPositions,
-		fset:          token.NewFileSet(),
-		references:    make(map[any]any),
-		refcount:      0,
+		WithComments:   withComments,
+		WithPositions:  withPositions,
+		WithReferences: withReferences,
+		fset:           token.NewFileSet(),
+		references:     make(map[any]any),
+		refcount:       0,
 	}
 }
 
@@ -32,6 +35,11 @@ func wrapMarshal[T any, R any](m *Marshaller, node *T, marshal func() *R) *R {
 	if node == nil {
 		return nil
 	}
+
+	if !m.WithReferences {
+		return marshal()
+	}
+
 	if ref, ok := m.references[node]; ok {
 		return ref.(*R)
 	}
@@ -43,10 +51,14 @@ func wrapMarshal[T any, R any](m *Marshaller, node *T, marshal func() *R) *R {
 // ---------------------------------------------------------------------------
 
 func (m *Marshaller) MarshalNode(nodeType string, _ ast.Node) Node {
-	m.refcount++
+	ref := 0
+	if m.WithReferences {
+		m.refcount++
+		ref = m.refcount
+	}
 	return Node{
 		NodeType: nodeType,
-		RefId:    m.refcount,
+		RefId:    ref,
 	}
 }
 

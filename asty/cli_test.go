@@ -130,19 +130,19 @@ func runRoundTripForFile(input string) error {
 	stem := strings.TrimSuffix(input, ".input")
 
 	jsonOutput := stem + ".json"
-	err := SourceToJSON(input, jsonOutput, "  ", true, true)
+	err := SourceToJSON(input, jsonOutput, "  ", true, true, true)
 	if err != nil {
 		return err
 	}
 
 	output := stem + ".output"
-	err = JSONToSource(jsonOutput, output, true, true)
+	err = JSONToSource(jsonOutput, output, true, true, true)
 	if err != nil {
 		return err
 	}
 
 	golden := stem + ".golden"
-	err = Loop(input, golden, true, true)
+	err = Loop(input, golden, true)
 	if err != nil {
 		return err
 	}

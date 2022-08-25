@@ -14,18 +14,21 @@ func init() {
 }
 
 type Unmarshaller struct {
-	fset          *token.FileSet
-	WithPositions bool
-	WithComments  bool
-	references    map[int]any
+	WithPositions  bool
+	WithComments   bool
+	WithReferences bool
+	
+	fset       *token.FileSet
+	references map[int]any
 }
 
-func NewUnmarshaller(withComments, withPositions bool) *Unmarshaller {
+func NewUnmarshaller(withComments, withPositions, withReferences bool) *Unmarshaller {
 	return &Unmarshaller{
-		WithComments:  withComments,
-		WithPositions: withPositions,
-		fset:          token.NewFileSet(),
-		references:    make(map[int]any),
+		WithComments:   withComments,
+		WithPositions:  withPositions,
+		WithReferences: withReferences,
+		fset:           token.NewFileSet(),
+		references:     make(map[int]any),
 	}
 }
 
@@ -33,7 +36,16 @@ func wrapUnmarshal[T INode, R any](um *Unmarshaller, node *T, marshal func() *R)
 	if node == nil {
 		return nil
 	}
+
+	if !um.WithReferences {
+		return marshal()
+	}
+
 	refId := (*node).GetRefId()
+	if refId == 0 {
+		return marshal()
+	}
+
 	if ref, ok := um.references[refId]; ok {
 		return ref.(*R)
 	}

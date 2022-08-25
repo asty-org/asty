@@ -31,13 +31,14 @@ func main() {
 	args := os.Args
 	var input, output string
 	var indent int
-	var comments, positions bool
+	var comments, positions, references bool
 	fs := flag.NewFlagSet("asty", flag.ExitOnError)
 	fs.StringVar(&input, "input", "", "input file name")
 	fs.StringVar(&output, "output", "", "output file name")
 	fs.IntVar(&indent, "indent", 0, "indentation level")
 	fs.BoolVar(&comments, "comments", false, "include comments")
 	fs.BoolVar(&positions, "positions", false, "include positions")
+	fs.BoolVar(&references, "references", false, "include references to reuse nodes from multiple places")
 
 	if len(args) < 2 {
 		printUsage(fs)
@@ -60,12 +61,12 @@ func main() {
 	switch args[1] {
 	case "go2json":
 		indentStr := strings.Repeat(" ", indent)
-		err := asty.SourceToJSON(input, output, indentStr, comments, positions)
+		err := asty.SourceToJSON(input, output, indentStr, comments, positions, references)
 		if err != nil {
 			printError(err)
 		}
 	case "json2go":
-		err := asty.JSONToSource(input, output, comments, positions)
+		err := asty.JSONToSource(input, output, comments, positions, references)
 		if err != nil {
 			printError(err)
 		}

@@ -8,8 +8,8 @@ import (
 	"os"
 )
 
-func SourceToJSON(input, output string, indent string, comments, positions bool) error {
-	marshaller := NewMarshaller(comments, positions)
+func SourceToJSON(input, output string, indent string, comments, positions, references bool) error {
+	marshaller := NewMarshaller(comments, positions, references)
 
 	mode := parser.SkipObjectResolution
 	if comments {
@@ -39,7 +39,7 @@ func SourceToJSON(input, output string, indent string, comments, positions bool)
 	return nil
 }
 
-func JSONToSource(input, output string, comments, positions bool) error {
+func JSONToSource(input, output string, comments, positions, references bool) error {
 	inFile, err := os.Open(input)
 	if err != nil {
 		return err
@@ -55,7 +55,7 @@ func JSONToSource(input, output string, comments, positions bool) error {
 		return err
 	}
 
-	unmarshaler := NewUnmarshaller(comments, positions)
+	unmarshaler := NewUnmarshaller(comments, positions, references)
 	tree := unmarshaler.UnmarshalFileNode(&node)
 
 	outFile, err := os.Create(output)
@@ -73,7 +73,7 @@ func JSONToSource(input, output string, comments, positions bool) error {
 	return nil
 }
 
-func Loop(input, output string, comments, positions bool) error {
+func Loop(input, output string, comments bool) error {
 	mode := parser.SkipObjectResolution
 	if comments {
 		mode |= parser.ParseComments
