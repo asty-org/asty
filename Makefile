@@ -5,5 +5,8 @@ BLDFLAGS=-ldflags="-s -w"
 
 all: build
 
+test:
+	go test -v ./asty
+
 build:
 	go build ${BLDFLAGS} -o ${BINDIR}/asty

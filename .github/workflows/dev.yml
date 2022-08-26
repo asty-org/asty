@@ -12,7 +12,6 @@ jobs:
         go-version-file: 'go.mod'
     - name: Test
       run: |
-        go test -v ./asty
         make test
     - name: Count Lines of Code (cloc)
       uses: djdefi/cloc-action@2
