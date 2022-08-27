@@ -2078,11 +2078,13 @@ func (node *FileNode) UnmarshalJSON(data []byte) error {
 	node.Comments = alias.Comments
 	node.FileSet = token.NewFileSet()
 
-	err = node.FileSet.Read(func(dest any) error {
-		return json.Unmarshal(alias.FileSet, dest)
-	})
-	if err != nil {
-		return err
+	if alias.FileSet != nil {
+		err = node.FileSet.Read(func(dest any) error {
+			return json.Unmarshal(alias.FileSet, dest)
+		})
+		if err != nil {
+			return err
+		}
 	}
 
 	return nil
