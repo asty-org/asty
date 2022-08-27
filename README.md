@@ -1,6 +1,8 @@
 # asty
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/asty-org/asty)
+[![GitHub last commit](https://img.shields.io/github/last-commit/asty-org/asty)](https://github.com/asty-org/asty)
+[![Docker Pulls](https://img.shields.io/docker/pulls/astyorg/asty)](https://hub.docker.com/r/astyorg/asty)
 
 _Not another JSON parser!_
 
@@ -116,6 +118,12 @@ asty json2go -input <input.json> -output <output.go>
 ```
 
 Use `asty help` for more information
+
+Using with docker
+
+```bash
+docker run astyorg/asty -input <input.json> -output <output.go>
+```
 
 ## Development principles
 
