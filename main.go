@@ -16,11 +16,6 @@ commands:
 flags:
 `
 
-func printUsage(fs *flag.FlagSet) {
-	fmt.Print(UsageString)
-	fs.PrintDefaults()
-}
-
 func printError(err error) {
 	_, _ = fmt.Fprintf(os.Stderr, "Error: %s\n", err)
 	os.Exit(1)
@@ -39,8 +34,13 @@ func main() {
 	fs.BoolVar(&positions, "positions", false, "include positions")
 	fs.BoolVar(&references, "references", false, "include references to reuse nodes from multiple places")
 
+	fs.Usage = func() {
+		fmt.Fprint(fs.Output(), UsageString)
+		fs.PrintDefaults()
+	}
+
 	if len(args) < 2 {
-		printUsage(fs)
+		fs.Usage()
 		return
 	}
 
@@ -70,11 +70,11 @@ func main() {
 			printError(err)
 		}
 	case "help":
-		printUsage(fs)
+		fs.Usage()
 		return
 	default:
 		fmt.Printf("unknown command: %s\n", args[1])
-		printUsage(fs)
+		fs.Usage()
 		os.Exit(1)
 	}
 }
