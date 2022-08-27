@@ -122,7 +122,7 @@ Use `asty help` for more information
 Using with docker
 
 ```bash
-docker run astyorg/asty -input <input.json> -output <output.go>
+docker run astyorg/asty go2json -input <input.go> -output <output.json>
 ```
 
 ## Development principles

@@ -27,12 +27,13 @@ func main() {
 	var indent int
 	var comments, positions, references bool
 	fs := flag.NewFlagSet("asty", flag.ExitOnError)
-	fs.StringVar(&input, "input", "", "input file name")
-	fs.StringVar(&output, "output", "", "output file name")
-	fs.IntVar(&indent, "indent", 0, "indentation level")
-	fs.BoolVar(&comments, "comments", false, "include comments")
-	fs.BoolVar(&positions, "positions", false, "include positions")
-	fs.BoolVar(&references, "references", false, "include references to reuse nodes from multiple places")
+	fs.StringVar(&input, "input", "", "input file name (default: stdin)")
+	fs.StringVar(&output, "output", "", "output file name (default: stdout)")
+	fs.IntVar(&indent, "indent", 0, "indentation level (default: 0)")
+	fs.BoolVar(&comments, "comments", false, "include comments (default: false)")
+	fs.BoolVar(&positions, "positions", false, "include positions (default: false)")
+	fs.BoolVar(&references, "references", false,
+		"include references to reuse nodes from multiple places (default: false)")
 
 	fs.Usage = func() {
 		fmt.Fprint(fs.Output(), UsageString)
