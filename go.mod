@@ -1,4 +1,4 @@
-module asty
+module github.com/asty-org/asty
 
 go 1.18
 

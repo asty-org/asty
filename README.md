@@ -11,7 +11,7 @@ _Not another JSON parser!_
 Marshals golang [AST](https://pkg.go.dev/go/ast) into JSON and unmarshals it back from JSON.
 
 It allows building pattern matching, statistical analysis, language transformation, search/data-mine/anything algorithms 
-for golang with any other language (I like to do it with python)
+for golang with any other language (I like to do it with python. Check out [asty-python](https://github.com/asty-org/asty-python))
 
 ## Example
 
