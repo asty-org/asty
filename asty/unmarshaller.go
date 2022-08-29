@@ -17,7 +17,7 @@ type Unmarshaller struct {
 	WithPositions  bool
 	WithComments   bool
 	WithReferences bool
-	
+
 	fset       *token.FileSet
 	references map[int]any
 }

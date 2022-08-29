@@ -44,6 +44,9 @@ func copyFile(src, dst string) error {
 	}
 
 	_, err = io.Copy(destination, source)
+	if err != nil {
+		return err
+	}
 
 	err = source.Close()
 	if err != nil {

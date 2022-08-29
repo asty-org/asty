@@ -1,6 +1,8 @@
 # asty
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/asty-org/asty)
+[![Go Reference](https://pkg.go.dev/badge/github.com/asty-org/asty.svg)](https://pkg.go.dev/github.com/asty-org/asty)
+[![Go Report Card](https://goreportcard.com/badge/github.com/asty-org/asty)](https://goreportcard.com/report/github.com/asty-org/asty)
 [![GitHub last commit](https://img.shields.io/github/last-commit/asty-org/asty)](https://github.com/asty-org/asty)
 [![Docker Pulls](https://img.shields.io/docker/pulls/astyorg/asty)](https://hub.docker.com/r/astyorg/asty)
 
