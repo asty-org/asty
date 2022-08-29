@@ -1,9 +1,9 @@
 package main
 
 import (
-	"asty/asty"
 	"flag"
 	"fmt"
+	"github.com/asty-org/asty/asty"
 	"os"
 	"strings"
 )
