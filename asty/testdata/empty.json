@@ -5,7 +5,7 @@
   "Package": {
     "NodeType": "Position",
     "RefId": 2,
-    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/empty.input",
+    "Filename": "testdata/empty.input",
     "Offset": 43,
     "Line": 3,
     "Column": 1
@@ -16,7 +16,7 @@
     "NamePos": {
       "NodeType": "Position",
       "RefId": 4,
-      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/empty.input",
+      "Filename": "testdata/empty.input",
       "Offset": 51,
       "Line": 3,
       "Column": 9
@@ -37,7 +37,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 7,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/empty.input",
+            "Filename": "testdata/empty.input",
             "Offset": 0,
             "Line": 1,
             "Column": 1
@@ -56,7 +56,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 10,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/empty.input",
+            "Filename": "testdata/empty.input",
             "Offset": 58,
             "Line": 5,
             "Column": 1
@@ -70,7 +70,7 @@
     "Base": 96,
     "Files": [
       {
-        "Name": "/Users/evgenus/tfc/asty/asty/testdata/empty.input",
+        "Name": "testdata/empty.input",
         "Base": 1,
         "Size": 94,
         "Lines": [

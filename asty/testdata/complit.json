@@ -5,7 +5,7 @@
   "Package": {
     "NodeType": "Position",
     "RefId": 2,
-    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+    "Filename": "testdata/complit.input",
     "Offset": 160,
     "Line": 5,
     "Column": 1
@@ -16,7 +16,7 @@
     "NamePos": {
       "NodeType": "Position",
       "RefId": 4,
-      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+      "Filename": "testdata/complit.input",
       "Offset": 168,
       "Line": 5,
       "Column": 9
@@ -30,7 +30,7 @@
       "TokPos": {
         "NodeType": "Position",
         "RefId": 6,
-        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+        "Filename": "testdata/complit.input",
         "Offset": 177,
         "Line": 7,
         "Column": 1
@@ -39,7 +39,7 @@
       "Lparen": {
         "NodeType": "Position",
         "RefId": 7,
-        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+        "Filename": "testdata/complit.input",
         "Offset": 181,
         "Line": 7,
         "Column": 5
@@ -58,7 +58,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 11,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 184,
                   "Line": 8,
                   "Column": 2
@@ -74,7 +74,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 13,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 212,
                 "Line": 9,
                 "Column": 2
@@ -93,7 +93,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 16,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 217,
                   "Line": 9,
                   "Column": 7
@@ -103,7 +103,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 17,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 218,
                 "Line": 9,
                 "Column": 8
@@ -118,7 +118,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 20,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 222,
                       "Line": 10,
                       "Column": 3
@@ -128,7 +128,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 21,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 224,
                     "Line": 10,
                     "Column": 5
@@ -139,7 +139,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 23,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 226,
                       "Line": 10,
                       "Column": 7
@@ -157,7 +157,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 26,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 237,
                       "Line": 11,
                       "Column": 3
@@ -167,7 +167,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 27,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 239,
                     "Line": 11,
                     "Column": 5
@@ -178,7 +178,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 29,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 241,
                       "Line": 11,
                       "Column": 7
@@ -191,7 +191,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 30,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 245,
                 "Line": 12,
                 "Column": 2
@@ -210,7 +210,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 33,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 248,
                 "Line": 13,
                 "Column": 2
@@ -229,7 +229,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 36,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 253,
                   "Line": 13,
                   "Column": 7
@@ -239,7 +239,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 37,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 254,
                 "Line": 13,
                 "Column": 8
@@ -254,7 +254,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 40,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 258,
                       "Line": 14,
                       "Column": 3
@@ -264,7 +264,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 41,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 260,
                     "Line": 14,
                     "Column": 5
@@ -275,7 +275,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 43,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 262,
                       "Line": 14,
                       "Column": 7
@@ -293,7 +293,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 46,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 267,
                       "Line": 15,
                       "Column": 3
@@ -303,7 +303,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 47,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 269,
                     "Line": 15,
                     "Column": 5
@@ -314,7 +314,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 49,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 271,
                       "Line": 15,
                       "Column": 7
@@ -327,7 +327,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 50,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 281,
                 "Line": 16,
                 "Column": 2
@@ -346,7 +346,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 53,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 284,
                 "Line": 17,
                 "Column": 2
@@ -365,7 +365,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 56,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 289,
                   "Line": 17,
                   "Column": 7
@@ -375,7 +375,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 57,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 290,
                 "Line": 17,
                 "Column": 8
@@ -390,7 +390,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 60,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 294,
                       "Line": 18,
                       "Column": 3
@@ -400,7 +400,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 61,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 296,
                     "Line": 18,
                     "Column": 5
@@ -411,7 +411,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 63,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 298,
                       "Line": 18,
                       "Column": 7
@@ -429,7 +429,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 66,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 309,
                       "Line": 19,
                       "Column": 3
@@ -439,7 +439,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 67,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 311,
                     "Line": 19,
                     "Column": 5
@@ -453,7 +453,7 @@
                       "NamePos": {
                         "NodeType": "Position",
                         "RefId": 70,
-                        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                        "Filename": "testdata/complit.input",
                         "Offset": 313,
                         "Line": 19,
                         "Column": 7
@@ -463,7 +463,7 @@
                     "Lbrace": {
                       "NodeType": "Position",
                       "RefId": 71,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 315,
                       "Line": 19,
                       "Column": 9
@@ -478,7 +478,7 @@
                           "NamePos": {
                             "NodeType": "Position",
                             "RefId": 74,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 320,
                             "Line": 20,
                             "Column": 4
@@ -488,7 +488,7 @@
                         "Colon": {
                           "NodeType": "Position",
                           "RefId": 75,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 321,
                           "Line": 20,
                           "Column": 5
@@ -499,7 +499,7 @@
                           "ValuePos": {
                             "NodeType": "Position",
                             "RefId": 77,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 323,
                             "Line": 20,
                             "Column": 7
@@ -517,7 +517,7 @@
                           "NamePos": {
                             "NodeType": "Position",
                             "RefId": 80,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 335,
                             "Line": 21,
                             "Column": 4
@@ -527,7 +527,7 @@
                         "Colon": {
                           "NodeType": "Position",
                           "RefId": 81,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 336,
                           "Line": 21,
                           "Column": 5
@@ -538,7 +538,7 @@
                           "ValuePos": {
                             "NodeType": "Position",
                             "RefId": 83,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 338,
                             "Line": 21,
                             "Column": 7
@@ -551,7 +551,7 @@
                     "Rbrace": {
                       "NodeType": "Position",
                       "RefId": 84,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 350,
                       "Line": 22,
                       "Column": 3
@@ -568,7 +568,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 87,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 355,
                       "Line": 23,
                       "Column": 3
@@ -578,7 +578,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 88,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 357,
                     "Line": 23,
                     "Column": 5
@@ -592,7 +592,7 @@
                       "NamePos": {
                         "NodeType": "Position",
                         "RefId": 91,
-                        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                        "Filename": "testdata/complit.input",
                         "Offset": 359,
                         "Line": 23,
                         "Column": 7
@@ -602,7 +602,7 @@
                     "Lbrace": {
                       "NodeType": "Position",
                       "RefId": 92,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 361,
                       "Line": 23,
                       "Column": 9
@@ -617,7 +617,7 @@
                           "NamePos": {
                             "NodeType": "Position",
                             "RefId": 95,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 366,
                             "Line": 24,
                             "Column": 4
@@ -627,7 +627,7 @@
                         "Colon": {
                           "NodeType": "Position",
                           "RefId": 96,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 367,
                           "Line": 24,
                           "Column": 5
@@ -638,7 +638,7 @@
                           "ValuePos": {
                             "NodeType": "Position",
                             "RefId": 98,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 369,
                             "Line": 24,
                             "Column": 7
@@ -651,7 +651,7 @@
                     "Rbrace": {
                       "NodeType": "Position",
                       "RefId": 99,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 380,
                       "Line": 25,
                       "Column": 3
@@ -663,7 +663,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 100,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 384,
                 "Line": 26,
                 "Column": 2
@@ -682,7 +682,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 103,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 387,
                 "Line": 27,
                 "Column": 2
@@ -701,7 +701,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 106,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 392,
                   "Line": 27,
                   "Column": 7
@@ -711,7 +711,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 107,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 393,
                 "Line": 27,
                 "Column": 8
@@ -726,7 +726,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 110,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 397,
                       "Line": 28,
                       "Column": 3
@@ -736,7 +736,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 111,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 399,
                     "Line": 28,
                     "Column": 5
@@ -747,7 +747,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 113,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 401,
                       "Line": 28,
                       "Column": 7
@@ -760,7 +760,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 114,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 405,
                 "Line": 29,
                 "Column": 2
@@ -782,7 +782,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 118,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 409,
                   "Line": 31,
                   "Column": 2
@@ -798,7 +798,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 120,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 438,
                 "Line": 32,
                 "Column": 2
@@ -817,7 +817,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 123,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 443,
                   "Line": 32,
                   "Column": 7
@@ -827,7 +827,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 124,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 444,
                 "Line": 32,
                 "Column": 8
@@ -842,7 +842,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 127,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 445,
                       "Line": 32,
                       "Column": 9
@@ -852,7 +852,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 128,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 447,
                     "Line": 32,
                     "Column": 11
@@ -863,7 +863,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 130,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 449,
                       "Line": 32,
                       "Column": 13
@@ -881,7 +881,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 133,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 458,
                       "Line": 32,
                       "Column": 22
@@ -891,7 +891,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 134,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 460,
                     "Line": 32,
                     "Column": 24
@@ -902,7 +902,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 136,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 462,
                       "Line": 32,
                       "Column": 26
@@ -915,7 +915,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 137,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 463,
                 "Line": 32,
                 "Column": 27
@@ -934,7 +934,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 140,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 466,
                 "Line": 33,
                 "Column": 2
@@ -953,7 +953,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 143,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 471,
                   "Line": 33,
                   "Column": 7
@@ -963,7 +963,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 144,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 472,
                 "Line": 33,
                 "Column": 8
@@ -978,7 +978,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 147,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 473,
                       "Line": 33,
                       "Column": 9
@@ -988,7 +988,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 148,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 475,
                     "Line": 33,
                     "Column": 11
@@ -999,7 +999,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 150,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 477,
                       "Line": 33,
                       "Column": 13
@@ -1017,7 +1017,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 153,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 480,
                       "Line": 33,
                       "Column": 16
@@ -1027,7 +1027,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 154,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 482,
                     "Line": 33,
                     "Column": 18
@@ -1038,7 +1038,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 156,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 484,
                       "Line": 33,
                       "Column": 20
@@ -1051,7 +1051,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 157,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 491,
                 "Line": 33,
                 "Column": 27
@@ -1070,7 +1070,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 160,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 494,
                 "Line": 34,
                 "Column": 2
@@ -1089,7 +1089,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 163,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 499,
                   "Line": 34,
                   "Column": 7
@@ -1099,7 +1099,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 164,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 500,
                 "Line": 34,
                 "Column": 8
@@ -1114,7 +1114,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 167,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 501,
                       "Line": 34,
                       "Column": 9
@@ -1124,7 +1124,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 168,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 503,
                     "Line": 34,
                     "Column": 11
@@ -1135,7 +1135,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 170,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 505,
                       "Line": 34,
                       "Column": 13
@@ -1148,7 +1148,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 171,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 506,
                 "Line": 34,
                 "Column": 14
@@ -1170,7 +1170,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 175,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 510,
                   "Line": 36,
                   "Column": 2
@@ -1186,7 +1186,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 177,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 538,
                 "Line": 37,
                 "Column": 2
@@ -1205,7 +1205,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 180,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 543,
                   "Line": 37,
                   "Column": 7
@@ -1215,7 +1215,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 181,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 544,
                 "Line": 37,
                 "Column": 8
@@ -1230,7 +1230,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 184,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 548,
                       "Line": 38,
                       "Column": 3
@@ -1240,7 +1240,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 185,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 550,
                     "Line": 38,
                     "Column": 5
@@ -1251,7 +1251,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 187,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 552,
                       "Line": 38,
                       "Column": 7
@@ -1269,7 +1269,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 190,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 561,
                       "Line": 38,
                       "Column": 16
@@ -1279,7 +1279,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 191,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 563,
                     "Line": 38,
                     "Column": 18
@@ -1290,7 +1290,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 193,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 565,
                       "Line": 38,
                       "Column": 20
@@ -1308,7 +1308,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 196,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 570,
                       "Line": 39,
                       "Column": 3
@@ -1318,7 +1318,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 197,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 572,
                     "Line": 39,
                     "Column": 5
@@ -1329,7 +1329,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 199,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 574,
                       "Line": 39,
                       "Column": 7
@@ -1347,7 +1347,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 202,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 585,
                       "Line": 40,
                       "Column": 3
@@ -1357,7 +1357,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 203,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 587,
                     "Line": 40,
                     "Column": 5
@@ -1368,7 +1368,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 205,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 589,
                       "Line": 40,
                       "Column": 7
@@ -1381,7 +1381,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 206,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 590,
                 "Line": 40,
                 "Column": 8
@@ -1400,7 +1400,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 209,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 593,
                 "Line": 41,
                 "Column": 2
@@ -1419,7 +1419,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 212,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 598,
                   "Line": 41,
                   "Column": 7
@@ -1429,7 +1429,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 213,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 599,
                 "Line": 41,
                 "Column": 8
@@ -1444,7 +1444,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 216,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 602,
                       "Line": 42,
                       "Column": 2
@@ -1454,7 +1454,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 217,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 604,
                     "Line": 42,
                     "Column": 4
@@ -1465,7 +1465,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 219,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 606,
                       "Line": 42,
                       "Column": 6
@@ -1483,7 +1483,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 222,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 609,
                       "Line": 42,
                       "Column": 9
@@ -1493,7 +1493,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 223,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 611,
                     "Line": 42,
                     "Column": 11
@@ -1504,7 +1504,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 225,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 613,
                       "Line": 42,
                       "Column": 13
@@ -1517,7 +1517,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 226,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 621,
                 "Line": 42,
                 "Column": 21
@@ -1536,7 +1536,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 229,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 624,
                 "Line": 43,
                 "Column": 2
@@ -1555,7 +1555,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 232,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 630,
                   "Line": 43,
                   "Column": 8
@@ -1565,7 +1565,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 233,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 631,
                 "Line": 43,
                 "Column": 9
@@ -1580,7 +1580,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 236,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 635,
                       "Line": 44,
                       "Column": 3
@@ -1590,7 +1590,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 237,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 637,
                     "Line": 44,
                     "Column": 5
@@ -1601,7 +1601,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 239,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 639,
                       "Line": 44,
                       "Column": 7
@@ -1619,7 +1619,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 242,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 648,
                       "Line": 44,
                       "Column": 16
@@ -1629,7 +1629,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 243,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 650,
                     "Line": 44,
                     "Column": 18
@@ -1640,7 +1640,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 245,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 652,
                       "Line": 44,
                       "Column": 20
@@ -1658,7 +1658,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 248,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 657,
                       "Line": 45,
                       "Column": 3
@@ -1668,7 +1668,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 249,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 659,
                     "Line": 45,
                     "Column": 5
@@ -1679,7 +1679,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 251,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 661,
                       "Line": 45,
                       "Column": 7
@@ -1697,7 +1697,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 254,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 666,
                       "Line": 46,
                       "Column": 3
@@ -1707,7 +1707,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 255,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 668,
                     "Line": 46,
                     "Column": 5
@@ -1718,7 +1718,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 257,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 670,
                       "Line": 46,
                       "Column": 7
@@ -1736,7 +1736,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 260,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 679,
                       "Line": 46,
                       "Column": 16
@@ -1746,7 +1746,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 261,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 681,
                     "Line": 46,
                     "Column": 18
@@ -1757,7 +1757,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 263,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 683,
                       "Line": 46,
                       "Column": 20
@@ -1770,7 +1770,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 264,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 687,
                 "Line": 47,
                 "Column": 2
@@ -1792,7 +1792,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 268,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 691,
                   "Line": 49,
                   "Column": 2
@@ -1808,7 +1808,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 270,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 728,
                 "Line": 50,
                 "Column": 2
@@ -1827,7 +1827,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 273,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 734,
                   "Line": 50,
                   "Column": 8
@@ -1837,7 +1837,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 274,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 735,
                 "Line": 50,
                 "Column": 9
@@ -1852,7 +1852,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 277,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 739,
                       "Line": 51,
                       "Column": 3
@@ -1862,7 +1862,7 @@
                   "Lbrace": {
                     "NodeType": "Position",
                     "RefId": 278,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 740,
                     "Line": 51,
                     "Column": 4
@@ -1877,7 +1877,7 @@
                         "NamePos": {
                           "NodeType": "Position",
                           "RefId": 281,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 745,
                           "Line": 52,
                           "Column": 4
@@ -1887,7 +1887,7 @@
                       "Colon": {
                         "NodeType": "Position",
                         "RefId": 282,
-                        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                        "Filename": "testdata/complit.input",
                         "Offset": 746,
                         "Line": 52,
                         "Column": 5
@@ -1898,7 +1898,7 @@
                         "ValuePos": {
                           "NodeType": "Position",
                           "RefId": 284,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 748,
                           "Line": 52,
                           "Column": 7
@@ -1916,7 +1916,7 @@
                         "NamePos": {
                           "NodeType": "Position",
                           "RefId": 287,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 760,
                           "Line": 53,
                           "Column": 4
@@ -1926,7 +1926,7 @@
                       "Colon": {
                         "NodeType": "Position",
                         "RefId": 288,
-                        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                        "Filename": "testdata/complit.input",
                         "Offset": 761,
                         "Line": 53,
                         "Column": 5
@@ -1937,7 +1937,7 @@
                         "ValuePos": {
                           "NodeType": "Position",
                           "RefId": 290,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 763,
                           "Line": 53,
                           "Column": 7
@@ -1950,7 +1950,7 @@
                   "Rbrace": {
                     "NodeType": "Position",
                     "RefId": 291,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 775,
                     "Line": 54,
                     "Column": 3
@@ -1966,7 +1966,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 294,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 780,
                       "Line": 55,
                       "Column": 3
@@ -1976,7 +1976,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 295,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 782,
                     "Line": 55,
                     "Column": 5
@@ -1990,7 +1990,7 @@
                       "NamePos": {
                         "NodeType": "Position",
                         "RefId": 298,
-                        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                        "Filename": "testdata/complit.input",
                         "Offset": 784,
                         "Line": 55,
                         "Column": 7
@@ -2000,7 +2000,7 @@
                     "Lbrace": {
                       "NodeType": "Position",
                       "RefId": 299,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 785,
                       "Line": 55,
                       "Column": 8
@@ -2015,7 +2015,7 @@
                           "NamePos": {
                             "NodeType": "Position",
                             "RefId": 302,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 790,
                             "Line": 56,
                             "Column": 4
@@ -2025,7 +2025,7 @@
                         "Colon": {
                           "NodeType": "Position",
                           "RefId": 303,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 791,
                           "Line": 56,
                           "Column": 5
@@ -2036,7 +2036,7 @@
                           "ValuePos": {
                             "NodeType": "Position",
                             "RefId": 305,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 793,
                             "Line": 56,
                             "Column": 7
@@ -2054,7 +2054,7 @@
                           "NamePos": {
                             "NodeType": "Position",
                             "RefId": 308,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 805,
                             "Line": 57,
                             "Column": 4
@@ -2064,7 +2064,7 @@
                         "Colon": {
                           "NodeType": "Position",
                           "RefId": 309,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 806,
                           "Line": 57,
                           "Column": 5
@@ -2075,7 +2075,7 @@
                           "ValuePos": {
                             "NodeType": "Position",
                             "RefId": 311,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 808,
                             "Line": 57,
                             "Column": 7
@@ -2088,7 +2088,7 @@
                     "Rbrace": {
                       "NodeType": "Position",
                       "RefId": 312,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 820,
                       "Line": 58,
                       "Column": 3
@@ -2100,7 +2100,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 313,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 824,
                 "Line": 59,
                 "Column": 2
@@ -2119,7 +2119,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 316,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 827,
                 "Line": 60,
                 "Column": 2
@@ -2138,7 +2138,7 @@
                 "NamePos": {
                   "NodeType": "Position",
                   "RefId": 319,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                  "Filename": "testdata/complit.input",
                   "Offset": 833,
                   "Line": 60,
                   "Column": 8
@@ -2148,7 +2148,7 @@
               "Lbrace": {
                 "NodeType": "Position",
                 "RefId": 320,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 834,
                 "Line": 60,
                 "Column": 9
@@ -2163,7 +2163,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 323,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 838,
                       "Line": 61,
                       "Column": 3
@@ -2173,7 +2173,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 324,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 840,
                     "Line": 61,
                     "Column": 5
@@ -2187,7 +2187,7 @@
                       "NamePos": {
                         "NodeType": "Position",
                         "RefId": 327,
-                        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                        "Filename": "testdata/complit.input",
                         "Offset": 842,
                         "Line": 61,
                         "Column": 7
@@ -2197,7 +2197,7 @@
                     "Lparen": {
                       "NodeType": "Position",
                       "RefId": 328,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 846,
                       "Line": 61,
                       "Column": 11
@@ -2209,7 +2209,7 @@
                         "Begin": {
                           "NodeType": "Position",
                           "RefId": 330,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 847,
                           "Line": 61,
                           "Column": 12
@@ -2221,7 +2221,7 @@
                           "NamePos": {
                             "NodeType": "Position",
                             "RefId": 332,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 852,
                             "Line": 61,
                             "Column": 17
@@ -2233,7 +2233,7 @@
                     "Rparen": {
                       "NodeType": "Position",
                       "RefId": 333,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 855,
                       "Line": 61,
                       "Column": 20
@@ -2249,7 +2249,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 336,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 860,
                       "Line": 62,
                       "Column": 3
@@ -2259,7 +2259,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 337,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 862,
                     "Line": 62,
                     "Column": 5
@@ -2273,7 +2273,7 @@
                       "Lbrack": {
                         "NodeType": "Position",
                         "RefId": 340,
-                        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                        "Filename": "testdata/complit.input",
                         "Offset": 864,
                         "Line": 62,
                         "Column": 7
@@ -2285,7 +2285,7 @@
                         "NamePos": {
                           "NodeType": "Position",
                           "RefId": 342,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 866,
                           "Line": 62,
                           "Column": 9
@@ -2296,7 +2296,7 @@
                     "Lbrace": {
                       "NodeType": "Position",
                       "RefId": 343,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 869,
                       "Line": 62,
                       "Column": 12
@@ -2305,7 +2305,7 @@
                     "Rbrace": {
                       "NodeType": "Position",
                       "RefId": 344,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 870,
                       "Line": 62,
                       "Column": 13
@@ -2322,7 +2322,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 347,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 875,
                       "Line": 63,
                       "Column": 3
@@ -2332,7 +2332,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 348,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 877,
                     "Line": 63,
                     "Column": 5
@@ -2346,7 +2346,7 @@
                       "NamePos": {
                         "NodeType": "Position",
                         "RefId": 351,
-                        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                        "Filename": "testdata/complit.input",
                         "Offset": 879,
                         "Line": 63,
                         "Column": 7
@@ -2356,7 +2356,7 @@
                     "Lparen": {
                       "NodeType": "Position",
                       "RefId": 352,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 883,
                       "Line": 63,
                       "Column": 11
@@ -2368,7 +2368,7 @@
                         "Map": {
                           "NodeType": "Position",
                           "RefId": 354,
-                          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                          "Filename": "testdata/complit.input",
                           "Offset": 884,
                           "Line": 63,
                           "Column": 12
@@ -2379,7 +2379,7 @@
                           "NamePos": {
                             "NodeType": "Position",
                             "RefId": 356,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 888,
                             "Line": 63,
                             "Column": 16
@@ -2392,7 +2392,7 @@
                           "NamePos": {
                             "NodeType": "Position",
                             "RefId": 358,
-                            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                            "Filename": "testdata/complit.input",
                             "Offset": 892,
                             "Line": 63,
                             "Column": 20
@@ -2404,7 +2404,7 @@
                     "Rparen": {
                       "NodeType": "Position",
                       "RefId": 359,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 898,
                       "Line": 63,
                       "Column": 26
@@ -2420,7 +2420,7 @@
                     "NamePos": {
                       "NodeType": "Position",
                       "RefId": 362,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 901,
                       "Line": 63,
                       "Column": 29
@@ -2430,7 +2430,7 @@
                   "Colon": {
                     "NodeType": "Position",
                     "RefId": 363,
-                    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                    "Filename": "testdata/complit.input",
                     "Offset": 903,
                     "Line": 63,
                     "Column": 31
@@ -2441,7 +2441,7 @@
                     "ValuePos": {
                       "NodeType": "Position",
                       "RefId": 365,
-                      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                      "Filename": "testdata/complit.input",
                       "Offset": 905,
                       "Line": 63,
                       "Column": 33
@@ -2454,7 +2454,7 @@
               "Rbrace": {
                 "NodeType": "Position",
                 "RefId": 366,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+                "Filename": "testdata/complit.input",
                 "Offset": 909,
                 "Line": 64,
                 "Column": 2
@@ -2467,7 +2467,7 @@
       "Rparen": {
         "NodeType": "Position",
         "RefId": 367,
-        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+        "Filename": "testdata/complit.input",
         "Offset": 911,
         "Line": 65,
         "Column": 1
@@ -2487,7 +2487,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 370,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+            "Filename": "testdata/complit.input",
             "Offset": 0,
             "Line": 1,
             "Column": 1
@@ -2500,7 +2500,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 372,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+            "Filename": "testdata/complit.input",
             "Offset": 55,
             "Line": 2,
             "Column": 1
@@ -2513,7 +2513,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 374,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+            "Filename": "testdata/complit.input",
             "Offset": 109,
             "Line": 3,
             "Column": 1
@@ -2532,7 +2532,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 11,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+            "Filename": "testdata/complit.input",
             "Offset": 184,
             "Line": 8,
             "Column": 2
@@ -2551,7 +2551,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 118,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+            "Filename": "testdata/complit.input",
             "Offset": 409,
             "Line": 31,
             "Column": 2
@@ -2570,7 +2570,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 175,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+            "Filename": "testdata/complit.input",
             "Offset": 510,
             "Line": 36,
             "Column": 2
@@ -2589,7 +2589,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 268,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+            "Filename": "testdata/complit.input",
             "Offset": 691,
             "Line": 49,
             "Column": 2
@@ -2603,7 +2603,7 @@
     "Base": 914,
     "Files": [
       {
-        "Name": "/Users/evgenus/tfc/asty/asty/testdata/complit.input",
+        "Name": "testdata/complit.input",
         "Base": 1,
         "Size": 912,
         "Lines": [

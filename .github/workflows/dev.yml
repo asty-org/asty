@@ -13,6 +13,12 @@ jobs:
     - name: Test
       run: |
         make test
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./profile.cov
+        fail_ci_if_error: true
     - name: Count Lines of Code (cloc)
       uses: djdefi/cloc-action@2
 

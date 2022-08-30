@@ -11,7 +11,7 @@
         "Slash": {
           "NodeType": "Position",
           "RefId": 4,
-          "Filename": "/Users/evgenus/tfc/asty/asty/testdata/gobuild4.input",
+          "Filename": "testdata/gobuild4.input",
           "Offset": 0,
           "Line": 1,
           "Column": 1
@@ -23,7 +23,7 @@
   "Package": {
     "NodeType": "Position",
     "RefId": 5,
-    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/gobuild4.input",
+    "Filename": "testdata/gobuild4.input",
     "Offset": 15,
     "Line": 2,
     "Column": 1
@@ -34,7 +34,7 @@
     "NamePos": {
       "NodeType": "Position",
       "RefId": 7,
-      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/gobuild4.input",
+      "Filename": "testdata/gobuild4.input",
       "Offset": 23,
       "Line": 2,
       "Column": 9
@@ -55,7 +55,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 4,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/gobuild4.input",
+            "Filename": "testdata/gobuild4.input",
             "Offset": 0,
             "Line": 1,
             "Column": 1
@@ -74,7 +74,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 10,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/gobuild4.input",
+            "Filename": "testdata/gobuild4.input",
             "Offset": 26,
             "Line": 4,
             "Column": 1
@@ -87,7 +87,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 12,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/gobuild4.input",
+            "Filename": "testdata/gobuild4.input",
             "Offset": 40,
             "Line": 5,
             "Column": 1
@@ -101,7 +101,7 @@
     "Base": 54,
     "Files": [
       {
-        "Name": "/Users/evgenus/tfc/asty/asty/testdata/gobuild4.input",
+        "Name": "testdata/gobuild4.input",
         "Base": 1,
         "Size": 52,
         "Lines": [

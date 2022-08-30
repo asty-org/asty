@@ -118,10 +118,18 @@ func TestRoundTrip(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	wd, err := os.Getwd()
+	if err != nil {
+		t.Fatal(err)
+	}
 	for _, input := range files {
 		filename := filepath.Base(input)
 		t.Run(filename, func(t *testing.T) {
-			err := runRoundTripForFile(input)
+			rel, err := filepath.Rel(wd, input)
+			if err != nil {
+				t.Fatal(err)
+			}
+			err = runRoundTripForFile(rel)
 			if err != nil {
 				t.Fatal(err)
 			}

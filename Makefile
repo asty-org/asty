@@ -6,7 +6,7 @@ BLDFLAGS=-ldflags="-s -w"
 all: build
 
 test:
-	go test -v ./asty
+	go test -v -coverpkg=github.com/asty-org/asty/asty -covermode=set -coverprofile=coverage.cov ./asty
 
 build:
 	go build ${BLDFLAGS} -o ${BINDIR}/asty

@@ -5,7 +5,7 @@
   "Package": {
     "NodeType": "Position",
     "RefId": 2,
-    "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+    "Filename": "testdata/go2numbers.input",
     "Offset": 0,
     "Line": 1,
     "Column": 1
@@ -16,7 +16,7 @@
     "NamePos": {
       "NodeType": "Position",
       "RefId": 4,
-      "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+      "Filename": "testdata/go2numbers.input",
       "Offset": 8,
       "Line": 1,
       "Column": 9
@@ -30,7 +30,7 @@
       "TokPos": {
         "NodeType": "Position",
         "RefId": 6,
-        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+        "Filename": "testdata/go2numbers.input",
         "Offset": 11,
         "Line": 3,
         "Column": 1
@@ -39,7 +39,7 @@
       "Lparen": {
         "NodeType": "Position",
         "RefId": 7,
-        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+        "Filename": "testdata/go2numbers.input",
         "Offset": 17,
         "Line": 3,
         "Column": 7
@@ -58,7 +58,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 11,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                  "Filename": "testdata/go2numbers.input",
                   "Offset": 20,
                   "Line": 4,
                   "Column": 2
@@ -74,7 +74,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 13,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 33,
                 "Line": 5,
                 "Column": 2
@@ -90,7 +90,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 15,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 37,
                 "Line": 5,
                 "Column": 6
@@ -110,7 +110,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 18,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 40,
                 "Line": 6,
                 "Column": 2
@@ -126,7 +126,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 20,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 44,
                 "Line": 6,
                 "Column": 6
@@ -146,7 +146,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 23,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 50,
                 "Line": 7,
                 "Column": 2
@@ -162,7 +162,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 25,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 54,
                 "Line": 7,
                 "Column": 6
@@ -182,7 +182,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 28,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 64,
                 "Line": 9,
                 "Column": 2
@@ -198,7 +198,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 30,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 68,
                 "Line": 9,
                 "Column": 6
@@ -218,7 +218,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 33,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 75,
                 "Line": 10,
                 "Column": 2
@@ -234,7 +234,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 35,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 79,
                 "Line": 10,
                 "Column": 6
@@ -257,7 +257,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 39,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                  "Filename": "testdata/go2numbers.input",
                   "Offset": 90,
                   "Line": 12,
                   "Column": 2
@@ -273,7 +273,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 41,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 103,
                 "Line": 13,
                 "Column": 2
@@ -289,7 +289,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 43,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 107,
                 "Line": 13,
                 "Column": 6
@@ -309,7 +309,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 46,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 110,
                 "Line": 14,
                 "Column": 2
@@ -325,7 +325,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 48,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 114,
                 "Line": 14,
                 "Column": 6
@@ -345,7 +345,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 51,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 120,
                 "Line": 15,
                 "Column": 2
@@ -361,7 +361,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 53,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 124,
                 "Line": 15,
                 "Column": 6
@@ -381,7 +381,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 56,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 134,
                 "Line": 17,
                 "Column": 2
@@ -397,7 +397,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 58,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 138,
                 "Line": 17,
                 "Column": 6
@@ -417,7 +417,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 61,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 145,
                 "Line": 18,
                 "Column": 2
@@ -433,7 +433,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 63,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 149,
                 "Line": 18,
                 "Column": 6
@@ -456,7 +456,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 67,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                  "Filename": "testdata/go2numbers.input",
                   "Offset": 161,
                   "Line": 20,
                   "Column": 2
@@ -472,7 +472,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 69,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 178,
                 "Line": 21,
                 "Column": 2
@@ -488,7 +488,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 71,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 182,
                 "Line": 21,
                 "Column": 6
@@ -508,7 +508,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 74,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 187,
                 "Line": 22,
                 "Column": 2
@@ -524,7 +524,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 76,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 191,
                 "Line": 22,
                 "Column": 6
@@ -544,7 +544,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 79,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 199,
                 "Line": 23,
                 "Column": 2
@@ -560,7 +560,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 81,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 203,
                 "Line": 23,
                 "Column": 6
@@ -580,7 +580,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 84,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 216,
                 "Line": 25,
                 "Column": 2
@@ -596,7 +596,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 86,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 220,
                 "Line": 25,
                 "Column": 6
@@ -616,7 +616,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 89,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 225,
                 "Line": 26,
                 "Column": 2
@@ -632,7 +632,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 91,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 229,
                 "Line": 26,
                 "Column": 6
@@ -652,7 +652,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 94,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 237,
                 "Line": 27,
                 "Column": 2
@@ -668,7 +668,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 96,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 241,
                 "Line": 27,
                 "Column": 6
@@ -688,7 +688,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 99,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 254,
                 "Line": 29,
                 "Column": 2
@@ -704,7 +704,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 101,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 258,
                 "Line": 29,
                 "Column": 6
@@ -724,7 +724,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 104,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 264,
                 "Line": 30,
                 "Column": 2
@@ -740,7 +740,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 106,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 268,
                 "Line": 30,
                 "Column": 6
@@ -760,7 +760,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 109,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 277,
                 "Line": 31,
                 "Column": 2
@@ -776,7 +776,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 111,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 281,
                 "Line": 31,
                 "Column": 6
@@ -799,7 +799,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 115,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                  "Filename": "testdata/go2numbers.input",
                   "Offset": 296,
                   "Line": 33,
                   "Column": 2
@@ -815,7 +815,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 117,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 307,
                 "Line": 34,
                 "Column": 2
@@ -831,7 +831,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 119,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 311,
                 "Line": 34,
                 "Column": 6
@@ -851,7 +851,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 122,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 316,
                 "Line": 35,
                 "Column": 2
@@ -867,7 +867,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 124,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 320,
                 "Line": 35,
                 "Column": 6
@@ -887,7 +887,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 127,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 328,
                 "Line": 36,
                 "Column": 2
@@ -903,7 +903,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 129,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 332,
                 "Line": 36,
                 "Column": 6
@@ -923,7 +923,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 132,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 345,
                 "Line": 38,
                 "Column": 2
@@ -939,7 +939,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 134,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 349,
                 "Line": 38,
                 "Column": 6
@@ -959,7 +959,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 137,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 354,
                 "Line": 39,
                 "Column": 2
@@ -975,7 +975,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 139,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 358,
                 "Line": 39,
                 "Column": 6
@@ -995,7 +995,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 142,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 366,
                 "Line": 40,
                 "Column": 2
@@ -1011,7 +1011,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 144,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 370,
                 "Line": 40,
                 "Column": 6
@@ -1031,7 +1031,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 147,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 383,
                 "Line": 42,
                 "Column": 2
@@ -1047,7 +1047,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 149,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 387,
                 "Line": 42,
                 "Column": 6
@@ -1067,7 +1067,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 152,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 393,
                 "Line": 43,
                 "Column": 2
@@ -1083,7 +1083,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 154,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 397,
                 "Line": 43,
                 "Column": 6
@@ -1103,7 +1103,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 157,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 406,
                 "Line": 44,
                 "Column": 2
@@ -1119,7 +1119,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 159,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 410,
                 "Line": 44,
                 "Column": 6
@@ -1139,7 +1139,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 162,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 424,
                 "Line": 46,
                 "Column": 2
@@ -1155,7 +1155,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 164,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 428,
                 "Line": 46,
                 "Column": 6
@@ -1175,7 +1175,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 167,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 434,
                 "Line": 47,
                 "Column": 2
@@ -1191,7 +1191,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 169,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 438,
                 "Line": 47,
                 "Column": 6
@@ -1211,7 +1211,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 172,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 447,
                 "Line": 48,
                 "Column": 2
@@ -1227,7 +1227,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 174,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 451,
                 "Line": 48,
                 "Column": 6
@@ -1250,7 +1250,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 178,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                  "Filename": "testdata/go2numbers.input",
                   "Offset": 465,
                   "Line": 50,
                   "Column": 2
@@ -1266,7 +1266,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 180,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 478,
                 "Line": 51,
                 "Column": 2
@@ -1282,7 +1282,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 182,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 482,
                 "Line": 51,
                 "Column": 6
@@ -1302,7 +1302,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 185,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 487,
                 "Line": 52,
                 "Column": 2
@@ -1318,7 +1318,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 187,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 491,
                 "Line": 52,
                 "Column": 6
@@ -1338,7 +1338,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 190,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 499,
                 "Line": 53,
                 "Column": 2
@@ -1354,7 +1354,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 192,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 503,
                 "Line": 53,
                 "Column": 6
@@ -1374,7 +1374,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 195,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 516,
                 "Line": 55,
                 "Column": 2
@@ -1390,7 +1390,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 197,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 520,
                 "Line": 55,
                 "Column": 6
@@ -1410,7 +1410,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 200,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 525,
                 "Line": 56,
                 "Column": 2
@@ -1426,7 +1426,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 202,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 529,
                 "Line": 56,
                 "Column": 6
@@ -1446,7 +1446,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 205,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 537,
                 "Line": 57,
                 "Column": 2
@@ -1462,7 +1462,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 207,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 541,
                 "Line": 57,
                 "Column": 6
@@ -1482,7 +1482,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 210,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 554,
                 "Line": 59,
                 "Column": 2
@@ -1498,7 +1498,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 212,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 558,
                 "Line": 59,
                 "Column": 6
@@ -1518,7 +1518,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 215,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 564,
                 "Line": 60,
                 "Column": 2
@@ -1534,7 +1534,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 217,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 568,
                 "Line": 60,
                 "Column": 6
@@ -1554,7 +1554,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 220,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 577,
                 "Line": 61,
                 "Column": 2
@@ -1570,7 +1570,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 222,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 581,
                 "Line": 61,
                 "Column": 6
@@ -1593,7 +1593,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 226,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                  "Filename": "testdata/go2numbers.input",
                   "Offset": 596,
                   "Line": 63,
                   "Column": 2
@@ -1609,7 +1609,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 228,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 615,
                 "Line": 64,
                 "Column": 2
@@ -1625,7 +1625,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 230,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 619,
                 "Line": 64,
                 "Column": 6
@@ -1645,7 +1645,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 233,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 623,
                 "Line": 65,
                 "Column": 2
@@ -1661,7 +1661,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 235,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 627,
                 "Line": 65,
                 "Column": 6
@@ -1681,7 +1681,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 238,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 633,
                 "Line": 66,
                 "Column": 2
@@ -1697,7 +1697,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 240,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 637,
                 "Line": 66,
                 "Column": 6
@@ -1717,7 +1717,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 243,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 645,
                 "Line": 68,
                 "Column": 2
@@ -1733,7 +1733,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 245,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 649,
                 "Line": 68,
                 "Column": 6
@@ -1753,7 +1753,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 248,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 653,
                 "Line": 69,
                 "Column": 2
@@ -1769,7 +1769,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 250,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 657,
                 "Line": 69,
                 "Column": 6
@@ -1789,7 +1789,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 253,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 663,
                 "Line": 70,
                 "Column": 2
@@ -1805,7 +1805,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 255,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 667,
                 "Line": 70,
                 "Column": 6
@@ -1825,7 +1825,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 258,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 675,
                 "Line": 72,
                 "Column": 2
@@ -1841,7 +1841,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 260,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 679,
                 "Line": 72,
                 "Column": 6
@@ -1861,7 +1861,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 263,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 684,
                 "Line": 73,
                 "Column": 2
@@ -1877,7 +1877,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 265,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 688,
                 "Line": 73,
                 "Column": 6
@@ -1897,7 +1897,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 268,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 696,
                 "Line": 74,
                 "Column": 2
@@ -1913,7 +1913,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 270,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 700,
                 "Line": 74,
                 "Column": 6
@@ -1933,7 +1933,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 273,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 710,
                 "Line": 76,
                 "Column": 2
@@ -1949,7 +1949,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 275,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 714,
                 "Line": 76,
                 "Column": 6
@@ -1969,7 +1969,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 278,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 720,
                 "Line": 77,
                 "Column": 2
@@ -1985,7 +1985,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 280,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 724,
                 "Line": 77,
                 "Column": 6
@@ -2005,7 +2005,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 283,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 732,
                 "Line": 78,
                 "Column": 2
@@ -2021,7 +2021,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 285,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 736,
                 "Line": 78,
                 "Column": 6
@@ -2041,7 +2041,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 288,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 747,
                 "Line": 80,
                 "Column": 2
@@ -2057,7 +2057,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 290,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 751,
                 "Line": 80,
                 "Column": 6
@@ -2077,7 +2077,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 293,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 758,
                 "Line": 81,
                 "Column": 2
@@ -2093,7 +2093,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 295,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 762,
                 "Line": 81,
                 "Column": 6
@@ -2113,7 +2113,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 298,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 772,
                 "Line": 82,
                 "Column": 2
@@ -2129,7 +2129,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 300,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 776,
                 "Line": 82,
                 "Column": 6
@@ -2149,7 +2149,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 303,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 788,
                 "Line": 84,
                 "Column": 2
@@ -2165,7 +2165,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 305,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 792,
                 "Line": 84,
                 "Column": 6
@@ -2185,7 +2185,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 308,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 799,
                 "Line": 85,
                 "Column": 2
@@ -2201,7 +2201,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 310,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 803,
                 "Line": 85,
                 "Column": 6
@@ -2221,7 +2221,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 313,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 813,
                 "Line": 86,
                 "Column": 2
@@ -2237,7 +2237,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 315,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 817,
                 "Line": 86,
                 "Column": 6
@@ -2257,7 +2257,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 318,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 829,
                 "Line": 88,
                 "Column": 2
@@ -2273,7 +2273,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 320,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 833,
                 "Line": 88,
                 "Column": 6
@@ -2293,7 +2293,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 323,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 838,
                 "Line": 89,
                 "Column": 2
@@ -2309,7 +2309,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 325,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 842,
                 "Line": 89,
                 "Column": 6
@@ -2329,7 +2329,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 328,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 851,
                 "Line": 90,
                 "Column": 2
@@ -2345,7 +2345,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 330,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 855,
                 "Line": 90,
                 "Column": 6
@@ -2365,7 +2365,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 333,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 867,
                 "Line": 92,
                 "Column": 2
@@ -2381,7 +2381,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 335,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 871,
                 "Line": 92,
                 "Column": 6
@@ -2401,7 +2401,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 338,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 878,
                 "Line": 93,
                 "Column": 2
@@ -2417,7 +2417,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 340,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 882,
                 "Line": 93,
                 "Column": 6
@@ -2437,7 +2437,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 343,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 895,
                 "Line": 94,
                 "Column": 2
@@ -2453,7 +2453,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 345,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 899,
                 "Line": 94,
                 "Column": 6
@@ -2473,7 +2473,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 348,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 916,
                 "Line": 96,
                 "Column": 2
@@ -2489,7 +2489,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 350,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 920,
                 "Line": 96,
                 "Column": 6
@@ -2509,7 +2509,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 353,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 928,
                 "Line": 97,
                 "Column": 2
@@ -2525,7 +2525,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 355,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 932,
                 "Line": 97,
                 "Column": 6
@@ -2545,7 +2545,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 358,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 941,
                 "Line": 99,
                 "Column": 2
@@ -2561,7 +2561,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 360,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 945,
                 "Line": 99,
                 "Column": 6
@@ -2581,7 +2581,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 363,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 952,
                 "Line": 100,
                 "Column": 2
@@ -2597,7 +2597,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 365,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 956,
                 "Line": 100,
                 "Column": 6
@@ -2617,7 +2617,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 368,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 965,
                 "Line": 101,
                 "Column": 2
@@ -2633,7 +2633,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 370,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 969,
                 "Line": 101,
                 "Column": 6
@@ -2653,7 +2653,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 373,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 979,
                 "Line": 103,
                 "Column": 2
@@ -2669,7 +2669,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 375,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 983,
                 "Line": 103,
                 "Column": 6
@@ -2689,7 +2689,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 378,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 991,
                 "Line": 104,
                 "Column": 2
@@ -2705,7 +2705,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 380,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 995,
                 "Line": 104,
                 "Column": 6
@@ -2725,7 +2725,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 383,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1005,
                 "Line": 105,
                 "Column": 2
@@ -2741,7 +2741,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 385,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1009,
                 "Line": 105,
                 "Column": 6
@@ -2761,7 +2761,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 388,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1022,
                 "Line": 107,
                 "Column": 2
@@ -2777,7 +2777,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 390,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1026,
                 "Line": 107,
                 "Column": 6
@@ -2797,7 +2797,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 393,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1033,
                 "Line": 108,
                 "Column": 2
@@ -2813,7 +2813,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 395,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1037,
                 "Line": 108,
                 "Column": 6
@@ -2833,7 +2833,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 398,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1048,
                 "Line": 109,
                 "Column": 2
@@ -2849,7 +2849,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 400,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1052,
                 "Line": 109,
                 "Column": 6
@@ -2869,7 +2869,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 403,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1065,
                 "Line": 111,
                 "Column": 2
@@ -2885,7 +2885,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 405,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1069,
                 "Line": 111,
                 "Column": 6
@@ -2905,7 +2905,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 408,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1076,
                 "Line": 112,
                 "Column": 2
@@ -2921,7 +2921,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 410,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1080,
                 "Line": 112,
                 "Column": 6
@@ -2941,7 +2941,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 413,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1090,
                 "Line": 113,
                 "Column": 2
@@ -2957,7 +2957,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 415,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1094,
                 "Line": 113,
                 "Column": 6
@@ -2977,7 +2977,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 418,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1106,
                 "Line": 115,
                 "Column": 2
@@ -2993,7 +2993,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 420,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1110,
                 "Line": 115,
                 "Column": 6
@@ -3013,7 +3013,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 423,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1121,
                 "Line": 116,
                 "Column": 2
@@ -3029,7 +3029,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 425,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1125,
                 "Line": 116,
                 "Column": 6
@@ -3052,7 +3052,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 429,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                  "Filename": "testdata/go2numbers.input",
                   "Offset": 1138,
                   "Line": 118,
                   "Column": 2
@@ -3068,7 +3068,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 431,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1161,
                 "Line": 119,
                 "Column": 2
@@ -3084,7 +3084,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 433,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1165,
                 "Line": 119,
                 "Column": 6
@@ -3104,7 +3104,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 436,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1174,
                 "Line": 120,
                 "Column": 2
@@ -3120,7 +3120,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 438,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1178,
                 "Line": 120,
                 "Column": 6
@@ -3140,7 +3140,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 441,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1195,
                 "Line": 121,
                 "Column": 2
@@ -3156,7 +3156,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 443,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1199,
                 "Line": 121,
                 "Column": 6
@@ -3176,7 +3176,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 446,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1213,
                 "Line": 123,
                 "Column": 2
@@ -3192,7 +3192,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 448,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1217,
                 "Line": 123,
                 "Column": 6
@@ -3212,7 +3212,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 451,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1226,
                 "Line": 124,
                 "Column": 2
@@ -3228,7 +3228,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 453,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1230,
                 "Line": 124,
                 "Column": 6
@@ -3248,7 +3248,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 456,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1245,
                 "Line": 125,
                 "Column": 2
@@ -3264,7 +3264,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 458,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1249,
                 "Line": 125,
                 "Column": 6
@@ -3284,7 +3284,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 461,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1263,
                 "Line": 127,
                 "Column": 2
@@ -3300,7 +3300,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 463,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1267,
                 "Line": 127,
                 "Column": 6
@@ -3320,7 +3320,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 466,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1274,
                 "Line": 128,
                 "Column": 2
@@ -3336,7 +3336,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 468,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1278,
                 "Line": 128,
                 "Column": 6
@@ -3356,7 +3356,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 471,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1293,
                 "Line": 129,
                 "Column": 2
@@ -3372,7 +3372,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 473,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1297,
                 "Line": 129,
                 "Column": 6
@@ -3392,7 +3392,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 476,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1310,
                 "Line": 131,
                 "Column": 2
@@ -3408,7 +3408,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 478,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1314,
                 "Line": 131,
                 "Column": 6
@@ -3428,7 +3428,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 481,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1323,
                 "Line": 132,
                 "Column": 2
@@ -3444,7 +3444,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 483,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1327,
                 "Line": 132,
                 "Column": 6
@@ -3464,7 +3464,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 486,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1343,
                 "Line": 133,
                 "Column": 2
@@ -3480,7 +3480,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 488,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1347,
                 "Line": 133,
                 "Column": 6
@@ -3500,7 +3500,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 491,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1361,
                 "Line": 135,
                 "Column": 2
@@ -3516,7 +3516,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 493,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1365,
                 "Line": 135,
                 "Column": 6
@@ -3536,7 +3536,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 496,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1381,
                 "Line": 136,
                 "Column": 2
@@ -3552,7 +3552,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 498,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1385,
                 "Line": 136,
                 "Column": 6
@@ -3572,7 +3572,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 501,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1399,
                 "Line": 138,
                 "Column": 2
@@ -3588,7 +3588,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 503,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1403,
                 "Line": 138,
                 "Column": 6
@@ -3608,7 +3608,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 506,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1422,
                 "Line": 139,
                 "Column": 2
@@ -3624,7 +3624,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 508,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1426,
                 "Line": 139,
                 "Column": 6
@@ -3644,7 +3644,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 511,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1442,
                 "Line": 140,
                 "Column": 2
@@ -3660,7 +3660,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 513,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1446,
                 "Line": 140,
                 "Column": 6
@@ -3683,7 +3683,7 @@
                 "Slash": {
                   "NodeType": "Position",
                   "RefId": 517,
-                  "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                  "Filename": "testdata/go2numbers.input",
                   "Offset": 1466,
                   "Line": 142,
                   "Column": 2
@@ -3699,7 +3699,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 519,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1482,
                 "Line": 143,
                 "Column": 2
@@ -3715,7 +3715,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 521,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1486,
                 "Line": 143,
                 "Column": 6
@@ -3735,7 +3735,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 524,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1490,
                 "Line": 144,
                 "Column": 2
@@ -3751,7 +3751,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 526,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1494,
                 "Line": 144,
                 "Column": 6
@@ -3771,7 +3771,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 529,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1499,
                 "Line": 145,
                 "Column": 2
@@ -3787,7 +3787,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 531,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1503,
                 "Line": 145,
                 "Column": 6
@@ -3807,7 +3807,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 534,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1508,
                 "Line": 146,
                 "Column": 2
@@ -3823,7 +3823,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 536,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1512,
                 "Line": 146,
                 "Column": 6
@@ -3843,7 +3843,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 539,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1525,
                 "Line": 147,
                 "Column": 2
@@ -3859,7 +3859,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 541,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1529,
                 "Line": 147,
                 "Column": 6
@@ -3879,7 +3879,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 544,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1536,
                 "Line": 148,
                 "Column": 2
@@ -3895,7 +3895,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 546,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1540,
                 "Line": 148,
                 "Column": 6
@@ -3915,7 +3915,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 549,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1553,
                 "Line": 149,
                 "Column": 2
@@ -3931,7 +3931,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 551,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1557,
                 "Line": 149,
                 "Column": 6
@@ -3951,7 +3951,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 554,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1570,
                 "Line": 150,
                 "Column": 2
@@ -3967,7 +3967,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 556,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1574,
                 "Line": 150,
                 "Column": 6
@@ -3987,7 +3987,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 559,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1581,
                 "Line": 151,
                 "Column": 2
@@ -4003,7 +4003,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 561,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1585,
                 "Line": 151,
                 "Column": 6
@@ -4023,7 +4023,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 564,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1596,
                 "Line": 153,
                 "Column": 2
@@ -4039,7 +4039,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 566,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1600,
                 "Line": 153,
                 "Column": 6
@@ -4059,7 +4059,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 569,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1604,
                 "Line": 154,
                 "Column": 2
@@ -4075,7 +4075,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 571,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1608,
                 "Line": 154,
                 "Column": 6
@@ -4095,7 +4095,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 574,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1614,
                 "Line": 155,
                 "Column": 2
@@ -4111,7 +4111,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 576,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1618,
                 "Line": 155,
                 "Column": 6
@@ -4131,7 +4131,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 579,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1624,
                 "Line": 156,
                 "Column": 2
@@ -4147,7 +4147,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 581,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1628,
                 "Line": 156,
                 "Column": 6
@@ -4167,7 +4167,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 584,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1644,
                 "Line": 157,
                 "Column": 2
@@ -4183,7 +4183,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 586,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1648,
                 "Line": 157,
                 "Column": 6
@@ -4203,7 +4203,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 589,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1656,
                 "Line": 158,
                 "Column": 2
@@ -4219,7 +4219,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 591,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1660,
                 "Line": 158,
                 "Column": 6
@@ -4239,7 +4239,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 594,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1676,
                 "Line": 159,
                 "Column": 2
@@ -4255,7 +4255,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 596,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1680,
                 "Line": 159,
                 "Column": 6
@@ -4275,7 +4275,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 599,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1696,
                 "Line": 160,
                 "Column": 2
@@ -4291,7 +4291,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 601,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1700,
                 "Line": 160,
                 "Column": 6
@@ -4311,7 +4311,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 604,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1708,
                 "Line": 161,
                 "Column": 2
@@ -4327,7 +4327,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 606,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1712,
                 "Line": 161,
                 "Column": 6
@@ -4347,7 +4347,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 609,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1725,
                 "Line": 163,
                 "Column": 2
@@ -4363,7 +4363,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 611,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1729,
                 "Line": 163,
                 "Column": 6
@@ -4383,7 +4383,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 614,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1734,
                 "Line": 164,
                 "Column": 2
@@ -4399,7 +4399,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 616,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1738,
                 "Line": 164,
                 "Column": 6
@@ -4419,7 +4419,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 619,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1745,
                 "Line": 165,
                 "Column": 2
@@ -4435,7 +4435,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 621,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1749,
                 "Line": 165,
                 "Column": 6
@@ -4455,7 +4455,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 624,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1757,
                 "Line": 166,
                 "Column": 2
@@ -4471,7 +4471,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 626,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1761,
                 "Line": 166,
                 "Column": 6
@@ -4491,7 +4491,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 629,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1772,
                 "Line": 168,
                 "Column": 2
@@ -4507,7 +4507,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 631,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1776,
                 "Line": 168,
                 "Column": 6
@@ -4527,7 +4527,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 634,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1782,
                 "Line": 169,
                 "Column": 2
@@ -4543,7 +4543,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 636,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1786,
                 "Line": 169,
                 "Column": 6
@@ -4563,7 +4563,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 639,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1794,
                 "Line": 170,
                 "Column": 2
@@ -4579,7 +4579,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 641,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1798,
                 "Line": 170,
                 "Column": 6
@@ -4599,7 +4599,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 644,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1807,
                 "Line": 171,
                 "Column": 2
@@ -4615,7 +4615,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 646,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1811,
                 "Line": 171,
                 "Column": 6
@@ -4635,7 +4635,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 649,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1823,
                 "Line": 173,
                 "Column": 2
@@ -4651,7 +4651,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 651,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1827,
                 "Line": 173,
                 "Column": 6
@@ -4671,7 +4671,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 654,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1835,
                 "Line": 174,
                 "Column": 2
@@ -4687,7 +4687,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 656,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1839,
                 "Line": 174,
                 "Column": 6
@@ -4707,7 +4707,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 659,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1851,
                 "Line": 175,
                 "Column": 2
@@ -4723,7 +4723,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 661,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1855,
                 "Line": 175,
                 "Column": 6
@@ -4743,7 +4743,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 664,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1868,
                 "Line": 176,
                 "Column": 2
@@ -4759,7 +4759,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 666,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1872,
                 "Line": 176,
                 "Column": 6
@@ -4779,7 +4779,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 669,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1889,
                 "Line": 178,
                 "Column": 2
@@ -4795,7 +4795,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 671,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1893,
                 "Line": 178,
                 "Column": 6
@@ -4815,7 +4815,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 674,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1902,
                 "Line": 179,
                 "Column": 2
@@ -4831,7 +4831,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 676,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1906,
                 "Line": 179,
                 "Column": 6
@@ -4851,7 +4851,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 679,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1915,
                 "Line": 180,
                 "Column": 2
@@ -4867,7 +4867,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 681,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1919,
                 "Line": 180,
                 "Column": 6
@@ -4887,7 +4887,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 684,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1927,
                 "Line": 181,
                 "Column": 2
@@ -4903,7 +4903,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 686,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1931,
                 "Line": 181,
                 "Column": 6
@@ -4923,7 +4923,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 689,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1939,
                 "Line": 182,
                 "Column": 2
@@ -4939,7 +4939,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 691,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1943,
                 "Line": 182,
                 "Column": 6
@@ -4959,7 +4959,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 694,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1954,
                 "Line": 183,
                 "Column": 2
@@ -4975,7 +4975,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 696,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1958,
                 "Line": 183,
                 "Column": 6
@@ -4995,7 +4995,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 699,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1969,
                 "Line": 184,
                 "Column": 2
@@ -5011,7 +5011,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 701,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1973,
                 "Line": 184,
                 "Column": 6
@@ -5031,7 +5031,7 @@
               "NamePos": {
                 "NodeType": "Position",
                 "RefId": 704,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1986,
                 "Line": 185,
                 "Column": 2
@@ -5047,7 +5047,7 @@
               "ValuePos": {
                 "NodeType": "Position",
                 "RefId": 706,
-                "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+                "Filename": "testdata/go2numbers.input",
                 "Offset": 1990,
                 "Line": 185,
                 "Column": 6
@@ -5061,7 +5061,7 @@
       "Rparen": {
         "NodeType": "Position",
         "RefId": 707,
-        "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+        "Filename": "testdata/go2numbers.input",
         "Offset": 2002,
         "Line": 186,
         "Column": 1
@@ -5081,7 +5081,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 11,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+            "Filename": "testdata/go2numbers.input",
             "Offset": 20,
             "Line": 4,
             "Column": 2
@@ -5100,7 +5100,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 39,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+            "Filename": "testdata/go2numbers.input",
             "Offset": 90,
             "Line": 12,
             "Column": 2
@@ -5119,7 +5119,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 67,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+            "Filename": "testdata/go2numbers.input",
             "Offset": 161,
             "Line": 20,
             "Column": 2
@@ -5138,7 +5138,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 115,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+            "Filename": "testdata/go2numbers.input",
             "Offset": 296,
             "Line": 33,
             "Column": 2
@@ -5157,7 +5157,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 178,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+            "Filename": "testdata/go2numbers.input",
             "Offset": 465,
             "Line": 50,
             "Column": 2
@@ -5176,7 +5176,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 226,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+            "Filename": "testdata/go2numbers.input",
             "Offset": 596,
             "Line": 63,
             "Column": 2
@@ -5195,7 +5195,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 429,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+            "Filename": "testdata/go2numbers.input",
             "Offset": 1138,
             "Line": 118,
             "Column": 2
@@ -5214,7 +5214,7 @@
           "Slash": {
             "NodeType": "Position",
             "RefId": 517,
-            "Filename": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+            "Filename": "testdata/go2numbers.input",
             "Offset": 1466,
             "Line": 142,
             "Column": 2
@@ -5228,7 +5228,7 @@
     "Base": 2006,
     "Files": [
       {
-        "Name": "/Users/evgenus/tfc/asty/asty/testdata/go2numbers.input",
+        "Name": "testdata/go2numbers.input",
         "Base": 1,
         "Size": 2004,
         "Lines": [
