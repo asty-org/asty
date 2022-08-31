@@ -18,6 +18,8 @@ for golang with any other language (I like to do it with python. Check out [asty
 
 ## Example
 
+[Try it!](https://asty-org.github.io/)
+
 Input golang source
 ```golang
 package main
