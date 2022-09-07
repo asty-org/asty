@@ -145,3 +145,7 @@ discriminated from object type name stored in separate field.
 Out of maintenance for a long time. Still works in some forks.
 - https://github.com/CreativeInquiry/go2json tries to parse golang code with parser written in javascript.
 Also lacks maintenance. Developed for particular use case of HaXe traspiler.
+
+## Article
+
+I wrote [an article](https://dev.to/evgenus/analyzing-ast-in-go-with-json-tools-36dg) about this project.
