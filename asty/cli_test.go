@@ -12,6 +12,11 @@ import (
 	"testing"
 )
 
+const (
+	InvalidGoFile   = "/dev/null/foo.go"
+	InvalidJsonFile = "/dev/null/foo.json"
+)
+
 func listDir(dir, suffix string) ([]string, error) {
 	files, err := ioutil.ReadDir(dir)
 	if err != nil {
@@ -163,4 +168,58 @@ func runRoundTripForFile(input string) error {
 		return err
 	}
 	return nil
+}
+
+func TestNoInputFile(t *testing.T) {
+	t.Run("Loop", func(t *testing.T) {
+		err := Loop(InvalidGoFile, InvalidGoFile, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+		fmt.Println(err)
+	})
+
+	t.Run("SourceToJSON", func(t *testing.T) {
+		err := SourceToJSON(InvalidGoFile, InvalidJsonFile, "  ", true, true, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+		fmt.Println(err)
+	})
+
+	t.Run("JSONToSource", func(t *testing.T) {
+		err := SourceToJSON(InvalidJsonFile, InvalidGoFile, "  ", true, true, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+		fmt.Println(err)
+	})
+}
+
+func TestNoOutputFile(t *testing.T) {
+	t.Run("Loop", func(t *testing.T) {
+		err := Loop("cli.go", InvalidGoFile, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+		fmt.Println(err)
+	})
+
+	t.Run("SourceToJSON", func(t *testing.T) {
+		err := SourceToJSON("cli.go", InvalidJsonFile, "  ", true, true, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+		fmt.Println(err)
+	})
+
+	t.Run("JSONToSource", func(t *testing.T) {
+		testDataRoot := getTestDataRoot()
+		filename := filepath.Join(testDataRoot, "doc.json")
+		err := JSONToSource(filename, InvalidGoFile, true, true, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+		fmt.Println(err)
+	})
 }
