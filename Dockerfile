@@ -1,4 +1,4 @@
-FROM golang:1.18-alpine3.16 as builder
+FROM golang:1.19-alpine3.16 as builder
 
 WORKDIR $GOPATH/src/github.com/asty-org/asty
 
