@@ -17,6 +17,21 @@ const (
 	InvalidJsonFile = "/dev/null/foo.json"
 )
 
+var paramsMatrix = []struct {
+	comments   bool
+	positions  bool
+	references bool
+}{
+	{false, false, false},
+	{false, false, true},
+	{false, true, false},
+	{false, true, true},
+	{true, false, false},
+	{true, false, true},
+	{true, true, false},
+	{true, true, true},
+}
+
 func listDir(dir, suffix string) ([]string, error) {
 	files, err := ioutil.ReadDir(dir)
 	if err != nil {
@@ -222,4 +237,23 @@ func TestNoOutputFile(t *testing.T) {
 		}
 		fmt.Println(err)
 	})
+}
+
+func TestRoundTripParamsMatrix(t *testing.T) {
+	for _, params := range paramsMatrix {
+		testName := fmt.Sprintf("comments:%t,positions:%t,references:%t", params.comments, params.positions, params.references)
+		t.Run(testName, func(t *testing.T) {
+			jsonOutput := filepath.Join(t.TempDir(), "out.json")
+			err := SourceToJSON("cli.go", jsonOutput, "  ", params.comments, params.positions, params.references)
+			if err != nil {
+				t.Fatal(err)
+			}
+
+			output := filepath.Join(t.TempDir(), "out.go")
+			err = JSONToSource(jsonOutput, output, params.comments, params.positions, params.references)
+			if err != nil {
+				t.Fatal(err)
+			}
+		})
+	}
 }
