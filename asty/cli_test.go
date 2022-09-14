@@ -191,7 +191,6 @@ func TestNoInputFile(t *testing.T) {
 		if err == nil {
 			t.Error("error expected")
 		}
-		fmt.Println(err)
 	})
 
 	t.Run("SourceToJSON", func(t *testing.T) {
@@ -199,7 +198,6 @@ func TestNoInputFile(t *testing.T) {
 		if err == nil {
 			t.Error("error expected")
 		}
-		fmt.Println(err)
 	})
 
 	t.Run("JSONToSource", func(t *testing.T) {
@@ -207,7 +205,6 @@ func TestNoInputFile(t *testing.T) {
 		if err == nil {
 			t.Error("error expected")
 		}
-		fmt.Println(err)
 	})
 }
 
@@ -217,7 +214,6 @@ func TestNoOutputFile(t *testing.T) {
 		if err == nil {
 			t.Error("error expected")
 		}
-		fmt.Println(err)
 	})
 
 	t.Run("SourceToJSON", func(t *testing.T) {
@@ -225,7 +221,6 @@ func TestNoOutputFile(t *testing.T) {
 		if err == nil {
 			t.Error("error expected")
 		}
-		fmt.Println(err)
 	})
 
 	t.Run("JSONToSource", func(t *testing.T) {
@@ -235,7 +230,6 @@ func TestNoOutputFile(t *testing.T) {
 		if err == nil {
 			t.Error("error expected")
 		}
-		fmt.Println(err)
 	})
 }
 
