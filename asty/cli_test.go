@@ -12,6 +12,26 @@ import (
 	"testing"
 )
 
+const (
+	InvalidGoFile   = "/dev/null/foo.go"
+	InvalidJsonFile = "/dev/null/foo.json"
+)
+
+var paramsMatrix = []struct {
+	comments   bool
+	positions  bool
+	references bool
+}{
+	{false, false, false},
+	{false, false, true},
+	{false, true, false},
+	{false, true, true},
+	{true, false, false},
+	{true, false, true},
+	{true, true, false},
+	{true, true, true},
+}
+
 func listDir(dir, suffix string) ([]string, error) {
 	files, err := ioutil.ReadDir(dir)
 	if err != nil {
@@ -163,4 +183,71 @@ func runRoundTripForFile(input string) error {
 		return err
 	}
 	return nil
+}
+
+func TestNoInputFile(t *testing.T) {
+	t.Run("Loop", func(t *testing.T) {
+		err := Loop(InvalidGoFile, InvalidGoFile, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+	})
+
+	t.Run("SourceToJSON", func(t *testing.T) {
+		err := SourceToJSON(InvalidGoFile, InvalidJsonFile, "  ", true, true, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+	})
+
+	t.Run("JSONToSource", func(t *testing.T) {
+		err := SourceToJSON(InvalidJsonFile, InvalidGoFile, "  ", true, true, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+	})
+}
+
+func TestNoOutputFile(t *testing.T) {
+	t.Run("Loop", func(t *testing.T) {
+		err := Loop("cli.go", InvalidGoFile, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+	})
+
+	t.Run("SourceToJSON", func(t *testing.T) {
+		err := SourceToJSON("cli.go", InvalidJsonFile, "  ", true, true, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+	})
+
+	t.Run("JSONToSource", func(t *testing.T) {
+		testDataRoot := getTestDataRoot()
+		filename := filepath.Join(testDataRoot, "doc.json")
+		err := JSONToSource(filename, InvalidGoFile, true, true, true)
+		if err == nil {
+			t.Error("error expected")
+		}
+	})
+}
+
+func TestRoundTripParamsMatrix(t *testing.T) {
+	for _, params := range paramsMatrix {
+		testName := fmt.Sprintf("comments:%t,positions:%t,references:%t", params.comments, params.positions, params.references)
+		t.Run(testName, func(t *testing.T) {
+			jsonOutput := filepath.Join(t.TempDir(), "out.json")
+			err := SourceToJSON("cli.go", jsonOutput, "  ", params.comments, params.positions, params.references)
+			if err != nil {
+				t.Fatal(err)
+			}
+
+			output := filepath.Join(t.TempDir(), "out.go")
+			err = JSONToSource(jsonOutput, output, params.comments, params.positions, params.references)
+			if err != nil {
+				t.Fatal(err)
+			}
+		})
+	}
 }
