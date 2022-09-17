@@ -6,6 +6,7 @@
 ![Codecov](https://img.shields.io/codecov/c/github/asty-org/asty)
 [![GitHub last commit](https://img.shields.io/github/last-commit/asty-org/asty)](https://github.com/asty-org/asty)
 [![Docker Pulls](https://img.shields.io/docker/pulls/astyorg/asty)](https://hub.docker.com/r/astyorg/asty)
+[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go#code-analysis)
 
 _Not another JSON parser!_
 
