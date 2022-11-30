@@ -10540,7 +10540,141 @@
       }
     }
   ],
-  "Imports": null,
+  "Imports": [
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 8,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 9,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 10,
+          "Filename": "testdata/linebreaks.input",
+          "Offset": 190,
+          "Line": 8,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"bytes\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 11,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 12,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 13,
+          "Filename": "testdata/linebreaks.input",
+          "Offset": 199,
+          "Line": 9,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"fmt\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 14,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 15,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 16,
+          "Filename": "testdata/linebreaks.input",
+          "Offset": 206,
+          "Line": 10,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 17,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 18,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 19,
+          "Filename": "testdata/linebreaks.input",
+          "Offset": 212,
+          "Line": 11,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"os\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 20,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 21,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 22,
+          "Filename": "testdata/linebreaks.input",
+          "Offset": 218,
+          "Line": 12,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"reflect\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 23,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 24,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 25,
+          "Filename": "testdata/linebreaks.input",
+          "Offset": 229,
+          "Line": 13,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"strings\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 26,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 27,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 28,
+          "Filename": "testdata/linebreaks.input",
+          "Offset": 240,
+          "Line": 14,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"testing\""
+      }
+    }
+  ],
   "Unresolved": null,
   "Comments": [
     {

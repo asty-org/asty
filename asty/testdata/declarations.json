@@ -39949,7 +39949,1902 @@
       }
     }
   ],
-  "Imports": null,
+  "Imports": [
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 7,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 8,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 9,
+          "Filename": "testdata/declarations.input",
+          "Offset": 184,
+          "Line": 7,
+          "Column": 8
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 13,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 14,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 15,
+          "Filename": "testdata/declarations.input",
+          "Offset": 200,
+          "Line": 10,
+          "Column": 2
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 16,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 17,
+          "Filename": "testdata/declarations.input",
+          "Offset": 202,
+          "Line": 10,
+          "Column": 4
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 21,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 22,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 23,
+          "Filename": "testdata/declarations.input",
+          "Offset": 217,
+          "Line": 13,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 24,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 25,
+          "Filename": "testdata/declarations.input",
+          "Offset": 219,
+          "Line": 13,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 29,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 30,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 31,
+          "Filename": "testdata/declarations.input",
+          "Offset": 235,
+          "Line": 16,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 32,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 33,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 34,
+          "Filename": "testdata/declarations.input",
+          "Offset": 241,
+          "Line": 17,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 35,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 36,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 37,
+          "Filename": "testdata/declarations.input",
+          "Offset": 247,
+          "Line": 18,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 42,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 43,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 44,
+          "Filename": "testdata/declarations.input",
+          "Offset": 265,
+          "Line": 22,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 45,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 46,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 47,
+          "Filename": "testdata/declarations.input",
+          "Offset": 271,
+          "Line": 23,
+          "Column": 2
+        },
+        "Name": "aLongRename"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 48,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 49,
+          "Filename": "testdata/declarations.input",
+          "Offset": 283,
+          "Line": 23,
+          "Column": 14
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 50,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 51,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 52,
+          "Filename": "testdata/declarations.input",
+          "Offset": 290,
+          "Line": 25,
+          "Column": 2
+        },
+        "Name": "b"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 53,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 54,
+          "Filename": "testdata/declarations.input",
+          "Offset": 292,
+          "Line": 25,
+          "Column": 4
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 59,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 60,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 61,
+          "Filename": "testdata/declarations.input",
+          "Offset": 316,
+          "Line": 29,
+          "Column": 8
+        },
+        "Kind": "STRING",
+        "Value": "\"unrenamed\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 62,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 63,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 64,
+          "Filename": "testdata/declarations.input",
+          "Offset": 335,
+          "Line": 30,
+          "Column": 8
+        },
+        "Name": "renamed"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 65,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 66,
+          "Filename": "testdata/declarations.input",
+          "Offset": 343,
+          "Line": 30,
+          "Column": 16
+        },
+        "Kind": "STRING",
+        "Value": "\"renameMe\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 67,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 68,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 69,
+          "Filename": "testdata/declarations.input",
+          "Offset": 361,
+          "Line": 31,
+          "Column": 8
+        },
+        "Name": "."
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 70,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 71,
+          "Filename": "testdata/declarations.input",
+          "Offset": 363,
+          "Line": 31,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 72,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 73,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 74,
+          "Filename": "testdata/declarations.input",
+          "Offset": 375,
+          "Line": 32,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 75,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 76,
+          "Filename": "testdata/declarations.input",
+          "Offset": 377,
+          "Line": 32,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 77,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 78,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 79,
+          "Filename": "testdata/declarations.input",
+          "Offset": 389,
+          "Line": 33,
+          "Column": 8
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 80,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 81,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 82,
+          "Filename": "testdata/declarations.input",
+          "Offset": 401,
+          "Line": 34,
+          "Column": 8
+        },
+        "Name": "."
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 83,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 84,
+          "Filename": "testdata/declarations.input",
+          "Offset": 403,
+          "Line": 34,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"os\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 93,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 94,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 95,
+          "Filename": "testdata/declarations.input",
+          "Offset": 541,
+          "Line": 39,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 96,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 97,
+          "Filename": "testdata/declarations.input",
+          "Offset": 543,
+          "Line": 39,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 100,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 101,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 102,
+          "Filename": "testdata/declarations.input",
+          "Offset": 555,
+          "Line": 40,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 103,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 104,
+          "Filename": "testdata/declarations.input",
+          "Offset": 557,
+          "Line": 40,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 107,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 108,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 109,
+          "Filename": "testdata/declarations.input",
+          "Offset": 569,
+          "Line": 41,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 110,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 111,
+          "Filename": "testdata/declarations.input",
+          "Offset": 571,
+          "Line": 41,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 114,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 115,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 116,
+          "Filename": "testdata/declarations.input",
+          "Offset": 584,
+          "Line": 43,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 117,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 118,
+          "Filename": "testdata/declarations.input",
+          "Offset": 586,
+          "Line": 43,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"os\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 121,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 122,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 123,
+          "Filename": "testdata/declarations.input",
+          "Offset": 598,
+          "Line": 44,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 124,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 125,
+          "Filename": "testdata/declarations.input",
+          "Offset": 600,
+          "Line": 44,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"os\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 128,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 129,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 130,
+          "Filename": "testdata/declarations.input",
+          "Offset": 612,
+          "Line": 45,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 131,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 132,
+          "Filename": "testdata/declarations.input",
+          "Offset": 614,
+          "Line": 45,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"os\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 135,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 136,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 137,
+          "Filename": "testdata/declarations.input",
+          "Offset": 628,
+          "Line": 48,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 138,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 139,
+          "Filename": "testdata/declarations.input",
+          "Offset": 630,
+          "Line": 48,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"fmt\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 142,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 143,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 144,
+          "Filename": "testdata/declarations.input",
+          "Offset": 643,
+          "Line": 49,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 145,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 146,
+          "Filename": "testdata/declarations.input",
+          "Offset": 645,
+          "Line": 49,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"fmt\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 149,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 150,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 151,
+          "Filename": "testdata/declarations.input",
+          "Offset": 658,
+          "Line": 50,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 152,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 153,
+          "Filename": "testdata/declarations.input",
+          "Offset": 660,
+          "Line": 50,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"fmt\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 156,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 157,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 158,
+          "Filename": "testdata/declarations.input",
+          "Offset": 674,
+          "Line": 52,
+          "Column": 8
+        },
+        "Kind": "STRING",
+        "Value": "\"foo\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 159,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 160,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 161,
+              "Filename": "testdata/declarations.input",
+              "Offset": 681,
+              "Line": 52,
+              "Column": 15
+            },
+            "Text": "// a comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 164,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 165,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 166,
+          "Filename": "testdata/declarations.input",
+          "Offset": 701,
+          "Line": 53,
+          "Column": 8
+        },
+        "Kind": "STRING",
+        "Value": "\"bar\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 167,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 168,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 169,
+              "Filename": "testdata/declarations.input",
+              "Offset": 708,
+              "Line": 53,
+              "Column": 15
+            },
+            "Text": "// a comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 173,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 174,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 175,
+          "Filename": "testdata/declarations.input",
+          "Offset": 732,
+          "Line": 56,
+          "Column": 2
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 176,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 177,
+          "Filename": "testdata/declarations.input",
+          "Offset": 734,
+          "Line": 56,
+          "Column": 4
+        },
+        "Kind": "STRING",
+        "Value": "\"foo\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 178,
+      "Doc": {
+        "NodeType": "CommentGroup",
+        "RefId": 179,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 180,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 181,
+              "Filename": "testdata/declarations.input",
+              "Offset": 741,
+              "Line": 57,
+              "Column": 2
+            },
+            "Text": "// a comment"
+          }
+        ]
+      },
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 182,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 183,
+          "Filename": "testdata/declarations.input",
+          "Offset": 755,
+          "Line": 58,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"bar\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 184,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 185,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 186,
+          "Filename": "testdata/declarations.input",
+          "Offset": 762,
+          "Line": 59,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"foo\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 187,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 188,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 189,
+              "Filename": "testdata/declarations.input",
+              "Offset": 769,
+              "Line": 59,
+              "Column": 9
+            },
+            "Text": "// a comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 190,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 191,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 192,
+          "Filename": "testdata/declarations.input",
+          "Offset": 783,
+          "Line": 60,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"bar\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 193,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 194,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 195,
+              "Filename": "testdata/declarations.input",
+              "Offset": 790,
+              "Line": 60,
+              "Column": 9
+            },
+            "Text": "// a comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 203,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 204,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 205,
+          "Filename": "testdata/declarations.input",
+          "Offset": 844,
+          "Line": 65,
+          "Column": 8
+        },
+        "Kind": "STRING",
+        "Value": "\"unrenamed\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 206,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 207,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 208,
+              "Filename": "testdata/declarations.input",
+              "Offset": 856,
+              "Line": 65,
+              "Column": 20
+            },
+            "Text": "// a comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 209,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 210,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 211,
+          "Filename": "testdata/declarations.input",
+          "Offset": 876,
+          "Line": 66,
+          "Column": 8
+        },
+        "Name": "renamed"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 212,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 213,
+          "Filename": "testdata/declarations.input",
+          "Offset": 884,
+          "Line": 66,
+          "Column": 16
+        },
+        "Kind": "STRING",
+        "Value": "\"renameMe\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 214,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 215,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 216,
+          "Filename": "testdata/declarations.input",
+          "Offset": 902,
+          "Line": 67,
+          "Column": 8
+        },
+        "Name": "."
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 217,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 218,
+          "Filename": "testdata/declarations.input",
+          "Offset": 904,
+          "Line": 67,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 219,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 220,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 221,
+              "Filename": "testdata/declarations.input",
+              "Offset": 909,
+              "Line": 67,
+              "Column": 15
+            },
+            "Text": "/* a comment */"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 222,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 223,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 224,
+          "Filename": "testdata/declarations.input",
+          "Offset": 932,
+          "Line": 68,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 225,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 226,
+          "Filename": "testdata/declarations.input",
+          "Offset": 934,
+          "Line": 68,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io/ioutil\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 227,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 228,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 229,
+              "Filename": "testdata/declarations.input",
+              "Offset": 946,
+              "Line": 68,
+              "Column": 22
+            },
+            "Text": "// a comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 230,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 231,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 232,
+          "Filename": "testdata/declarations.input",
+          "Offset": 966,
+          "Line": 69,
+          "Column": 8
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 233,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 234,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 235,
+              "Filename": "testdata/declarations.input",
+              "Offset": 971,
+              "Line": 69,
+              "Column": 13
+            },
+            "Text": "// testing alignment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 236,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 237,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 238,
+          "Filename": "testdata/declarations.input",
+          "Offset": 999,
+          "Line": 70,
+          "Column": 8
+        },
+        "Name": "."
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 239,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 240,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1001,
+          "Line": 70,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"os\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 248,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 249,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 250,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1102,
+          "Line": 76,
+          "Column": 2
+        },
+        "Name": "."
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 251,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 252,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1104,
+          "Line": 76,
+          "Column": 4
+        },
+        "Kind": "STRING",
+        "Value": "\"fmt\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 253,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 254,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 255,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1111,
+          "Line": 77,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 256,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 257,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 258,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1117,
+          "Line": 78,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"malloc\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 259,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 260,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 261,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1126,
+              "Line": 78,
+              "Column": 11
+            },
+            "Text": "// for the malloc count test only"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 262,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 263,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 264,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1161,
+          "Line": 79,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"math\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 265,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 266,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 267,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1169,
+          "Line": 80,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"strings\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 268,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 269,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 270,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1180,
+          "Line": 81,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"testing\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 278,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 279,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 280,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1227,
+          "Line": 86,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"xxx\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 281,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 282,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 283,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1234,
+          "Line": 87,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"much_longer_name\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 284,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 285,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 286,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1253,
+              "Line": 87,
+              "Column": 21
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 287,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 288,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 289,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1265,
+          "Line": 88,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"short_name\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 290,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 291,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 292,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1278,
+              "Line": 88,
+              "Column": 15
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 297,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 298,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 299,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1302,
+          "Line": 92,
+          "Column": 2
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 300,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 301,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1304,
+          "Line": 92,
+          "Column": 4
+        },
+        "Kind": "STRING",
+        "Value": "\"xxx\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 302,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 303,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 304,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1311,
+          "Line": 93,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"much_longer_name\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 305,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 306,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 307,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1330,
+              "Line": 93,
+              "Column": 21
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 312,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 313,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 314,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1354,
+          "Line": 97,
+          "Column": 2
+        },
+        "Name": "mymath"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 315,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 316,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1361,
+          "Line": 97,
+          "Column": 9
+        },
+        "Kind": "STRING",
+        "Value": "\"math\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 317,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 318,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 319,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1369,
+          "Line": 98,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"/foo/bar/long_package_path\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 320,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 321,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 322,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1398,
+              "Line": 98,
+              "Column": 31
+            },
+            "Text": "// a comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 327,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 328,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 329,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1424,
+          "Line": 102,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"package_a\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 330,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 331,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 332,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1436,
+              "Line": 102,
+              "Column": 14
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 333,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 334,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 335,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1448,
+          "Line": 103,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"package_b\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 336,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 337,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 338,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1461,
+          "Line": 104,
+          "Column": 2
+        },
+        "Name": "my_better_c"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 339,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 340,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1473,
+          "Line": 104,
+          "Column": 14
+        },
+        "Kind": "STRING",
+        "Value": "\"package_c\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 341,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 342,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 343,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1485,
+              "Line": 104,
+              "Column": 26
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 344,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 345,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 346,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1497,
+          "Line": 105,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"package_d\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 347,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 348,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 349,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1509,
+              "Line": 105,
+              "Column": 14
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 350,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 351,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 352,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1521,
+          "Line": 106,
+          "Column": 2
+        },
+        "Name": "my_e"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 353,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 354,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1526,
+          "Line": 106,
+          "Column": 7
+        },
+        "Kind": "STRING",
+        "Value": "\"package_e\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 355,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 356,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 357,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1538,
+              "Line": 106,
+              "Column": 19
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 358,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 359,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 360,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1551,
+          "Line": 108,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"package_a\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 361,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 362,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 363,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1566,
+              "Line": 108,
+              "Column": 17
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 364,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 365,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 366,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1578,
+          "Line": 109,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"package_bb\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 367,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 368,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 369,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1592,
+          "Line": 110,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"package_ccc\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 370,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 371,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 372,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1607,
+              "Line": 110,
+              "Column": 17
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 373,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 374,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 375,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1619,
+          "Line": 111,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"package_dddd\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 376,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 377,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 378,
+              "Filename": "testdata/declarations.input",
+              "Offset": 1634,
+              "Line": 111,
+              "Column": 17
+            },
+            "Text": "// comment"
+          }
+        ]
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 392,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 393,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 394,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1853,
+          "Line": 119,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "`fmt`"
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 395,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 396,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 397,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1860,
+          "Line": 120,
+          "Column": 2
+        },
+        "Kind": "STRING",
+        "Value": "\"math\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 404,
+      "Name": {
+        "NodeType": "Ident",
+        "RefId": 405,
+        "NamePos": {
+          "NodeType": "Position",
+          "RefId": 406,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1943,
+          "Line": 124,
+          "Column": 8
+        },
+        "Name": "_"
+      },
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 407,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 408,
+          "Filename": "testdata/declarations.input",
+          "Offset": 1945,
+          "Line": 124,
+          "Column": 10
+        },
+        "Kind": "STRING",
+        "Value": "\"io\""
+      }
+    }
+  ],
   "Unresolved": null,
   "Comments": [
     {

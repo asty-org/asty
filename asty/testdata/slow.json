@@ -6839,7 +6839,46 @@
       }
     }
   ],
-  "Imports": null,
+  "Imports": [
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 8,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 9,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 10,
+          "Filename": "testdata/slow.input",
+          "Offset": 201,
+          "Line": 8,
+          "Column": 9
+        },
+        "Kind": "STRING",
+        "Value": "\"testing\""
+      }
+    },
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 11,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 12,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 13,
+          "Filename": "testdata/slow.input",
+          "Offset": 219,
+          "Line": 9,
+          "Column": 9
+        },
+        "Kind": "STRING",
+        "Value": "\"google3/spam/archer/frontend/deepequal\""
+      }
+    }
+  ],
   "Unresolved": null,
   "Comments": [
     {

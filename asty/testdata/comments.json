@@ -15591,7 +15591,46 @@
       ]
     }
   ],
-  "Imports": null,
+  "Imports": [
+    {
+      "NodeType": "ImportSpec",
+      "RefId": 12,
+      "Name": null,
+      "Path": {
+        "NodeType": "BasicLit",
+        "RefId": 13,
+        "ValuePos": {
+          "NodeType": "Position",
+          "RefId": 14,
+          "Filename": "testdata/comments.input",
+          "Offset": 250,
+          "Line": 9,
+          "Column": 8
+        },
+        "Kind": "STRING",
+        "Value": "\"fmt\""
+      },
+      "Comment": {
+        "NodeType": "CommentGroup",
+        "RefId": 15,
+        "List": [
+          {
+            "NodeType": "Comment",
+            "RefId": 16,
+            "Slash": {
+              "NodeType": "Position",
+              "RefId": 17,
+              "Filename": "testdata/comments.input",
+              "Offset": 257,
+              "Line": 9,
+              "Column": 15
+            },
+            "Text": "// fmt"
+          }
+        ]
+      }
+    }
+  ],
   "Unresolved": null,
   "Comments": [
     {
