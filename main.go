@@ -25,7 +25,7 @@ func main() {
 	args := os.Args
 	var input, output string
 	var indent int
-	var comments, positions, references bool
+	var comments, positions, references, imports bool
 	fs := flag.NewFlagSet("asty", flag.ExitOnError)
 	fs.StringVar(&input, "input", "", "input file name (default: stdin)")
 	fs.StringVar(&output, "output", "", "output file name (default: stdout)")
@@ -34,6 +34,8 @@ func main() {
 	fs.BoolVar(&positions, "positions", false, "include positions (default: false)")
 	fs.BoolVar(&references, "references", false,
 		"include references to reuse nodes from multiple places (default: false)")
+	fs.BoolVar(&imports, "imports", false,
+		"include imports list into output (default: false)")
 
 	fs.Usage = func() {
 		fmt.Fprint(fs.Output(), UsageString)
@@ -58,15 +60,22 @@ func main() {
 		output = os.Stdout.Name()
 	}
 
+	options := asty.Options{
+		WithImports:    imports,
+		WithComments:   comments,
+		WithPositions:  positions,
+		WithReferences: references,
+	}
+
 	switch args[1] {
 	case "go2json":
 		indentStr := strings.Repeat(" ", indent)
-		err := asty.SourceToJSON(input, output, indentStr, comments, positions, references)
+		err := asty.SourceToJSON(input, output, indentStr, options)
 		if err != nil {
 			printError(err)
 		}
 	case "json2go":
-		err := asty.JSONToSource(input, output, comments, positions, references)
+		err := asty.JSONToSource(input, output, options)
 		if err != nil {
 			printError(err)
 		}

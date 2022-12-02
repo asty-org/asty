@@ -7,23 +7,18 @@ import (
 )
 
 type Marshaller struct {
-	WithPositions  bool
-	WithComments   bool
-	WithReferences bool
-
+	Options
 	fset       *token.FileSet
 	references map[any]any
 	refcount   int
 }
 
-func NewMarshaller(withComments, withPositions, withReferences bool) *Marshaller {
+func NewMarshaller(options Options) *Marshaller {
 	return &Marshaller{
-		WithComments:   withComments,
-		WithPositions:  withPositions,
-		WithReferences: withReferences,
-		fset:           token.NewFileSet(),
-		references:     make(map[any]any),
-		refcount:       0,
+		Options:    options,
+		fset:       token.NewFileSet(),
+		references: make(map[any]any),
+		refcount:   0,
 	}
 }
 
@@ -822,6 +817,17 @@ func (m *Marshaller) MarshalImportSpec(spec *ast.ImportSpec) *ImportSpecNode {
 	})
 }
 
+func (m *Marshaller) MarshalImportSpecs(imports []*ast.ImportSpec) []*ImportSpecNode {
+	if imports == nil {
+		return nil
+	}
+	nodes := make([]*ImportSpecNode, len(imports))
+	for index, importSpec := range imports {
+		nodes[index] = m.MarshalImportSpec(importSpec)
+	}
+	return nodes
+}
+
 func (m *Marshaller) MarshalValueSpec(spec *ast.ValueSpec) *ValueSpecNode {
 	return wrapMarshal(m, spec, func() *ValueSpecNode {
 		return &ValueSpecNode{
@@ -943,14 +949,20 @@ func (m *Marshaller) MarshalDecls(decls []ast.Decl) []IDeclNode {
 
 func (m *Marshaller) MarshalFile(node *ast.File) *FileNode {
 	return wrapMarshal(m, node, func() *FileNode {
+		var imports []*ImportSpecNode
+		if m.WithImports {
+			imports = m.MarshalImportSpecs(node.Imports)
+		}
 		return &FileNode{
-			Node:     m.MarshalNode("File", node),
-			Doc:      m.MarshalCommentGroup(node.Doc),
-			Package:  m.MarshalPosition(node.Package),
-			Name:     m.MarshalIdent(node.Name),
-			Decls:    m.MarshalDecls(node.Decls),
-			Comments: m.MarshalCommentGroups(node.Comments),
-			FileSet:  m.fset,
+			Node:       m.MarshalNode("File", node),
+			Doc:        m.MarshalCommentGroup(node.Doc),
+			Package:    m.MarshalPosition(node.Package),
+			Name:       m.MarshalIdent(node.Name),
+			Decls:      m.MarshalDecls(node.Decls),
+			Imports:    imports,
+			Unresolved: m.MarshalIdents(node.Unresolved),
+			Comments:   m.MarshalCommentGroups(node.Comments),
+			FileSet:    m.fset,
 		}
 	})
 }

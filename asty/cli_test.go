@@ -21,15 +21,24 @@ var paramsMatrix = []struct {
 	comments   bool
 	positions  bool
 	references bool
+	imports    bool
 }{
-	{false, false, false},
-	{false, false, true},
-	{false, true, false},
-	{false, true, true},
-	{true, false, false},
-	{true, false, true},
-	{true, true, false},
-	{true, true, true},
+	{false, false, false, false},
+	{false, false, false, true},
+	{false, false, true, false},
+	{false, false, true, true},
+	{false, true, false, false},
+	{false, true, false, true},
+	{false, true, true, false},
+	{false, true, true, true},
+	{true, false, false, false},
+	{true, false, false, true},
+	{true, false, true, false},
+	{true, false, true, true},
+	{true, true, false, false},
+	{true, true, false, true},
+	{true, true, true, false},
+	{true, true, true, true},
 }
 
 func listDir(dir, suffix string) ([]string, error) {
@@ -160,14 +169,21 @@ func TestRoundTrip(t *testing.T) {
 func runRoundTripForFile(input string) error {
 	stem := strings.TrimSuffix(input, ".input")
 
+	options := Options{
+		WithComments:   true,
+		WithPositions:  true,
+		WithReferences: true,
+		WithImports:    false,
+	}
+
 	jsonOutput := stem + ".json"
-	err := SourceToJSON(input, jsonOutput, "  ", true, true, true)
+	err := SourceToJSON(input, jsonOutput, "  ", options)
 	if err != nil {
 		return err
 	}
 
 	output := stem + ".output"
-	err = JSONToSource(jsonOutput, output, true, true, true)
+	err = JSONToSource(jsonOutput, output, options)
 	if err != nil {
 		return err
 	}
@@ -194,14 +210,14 @@ func TestNoInputFile(t *testing.T) {
 	})
 
 	t.Run("SourceToJSON", func(t *testing.T) {
-		err := SourceToJSON(InvalidGoFile, InvalidJsonFile, "  ", true, true, true)
+		err := SourceToJSON(InvalidGoFile, InvalidJsonFile, "  ", Options{})
 		if err == nil {
 			t.Error("error expected")
 		}
 	})
 
 	t.Run("JSONToSource", func(t *testing.T) {
-		err := SourceToJSON(InvalidJsonFile, InvalidGoFile, "  ", true, true, true)
+		err := SourceToJSON(InvalidJsonFile, InvalidGoFile, "  ", Options{})
 		if err == nil {
 			t.Error("error expected")
 		}
@@ -217,7 +233,7 @@ func TestNoOutputFile(t *testing.T) {
 	})
 
 	t.Run("SourceToJSON", func(t *testing.T) {
-		err := SourceToJSON("cli.go", InvalidJsonFile, "  ", true, true, true)
+		err := SourceToJSON("cli.go", InvalidJsonFile, "  ", Options{})
 		if err == nil {
 			t.Error("error expected")
 		}
@@ -226,7 +242,7 @@ func TestNoOutputFile(t *testing.T) {
 	t.Run("JSONToSource", func(t *testing.T) {
 		testDataRoot := getTestDataRoot()
 		filename := filepath.Join(testDataRoot, "doc.json")
-		err := JSONToSource(filename, InvalidGoFile, true, true, true)
+		err := JSONToSource(filename, InvalidGoFile, Options{})
 		if err == nil {
 			t.Error("error expected")
 		}
@@ -235,16 +251,26 @@ func TestNoOutputFile(t *testing.T) {
 
 func TestRoundTripParamsMatrix(t *testing.T) {
 	for _, params := range paramsMatrix {
-		testName := fmt.Sprintf("comments:%t,positions:%t,references:%t", params.comments, params.positions, params.references)
+		testName := fmt.Sprintf(
+			"comments:%t,positions:%t,references:%t,imports:%t",
+			params.comments, params.positions, params.references, params.imports,
+		)
 		t.Run(testName, func(t *testing.T) {
+			options := Options{
+				WithComments:   params.comments,
+				WithPositions:  params.positions,
+				WithReferences: params.references,
+				WithImports:    params.imports,
+			}
+
 			jsonOutput := filepath.Join(t.TempDir(), "out.json")
-			err := SourceToJSON("cli.go", jsonOutput, "  ", params.comments, params.positions, params.references)
+			err := SourceToJSON("cli.go", jsonOutput, "  ", options)
 			if err != nil {
 				t.Fatal(err)
 			}
 
 			output := filepath.Join(t.TempDir(), "out.go")
-			err = JSONToSource(jsonOutput, output, params.comments, params.positions, params.references)
+			err = JSONToSource(jsonOutput, output, options)
 			if err != nil {
 				t.Fatal(err)
 			}
