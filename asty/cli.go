@@ -8,11 +8,18 @@ import (
 	"os"
 )
 
-func SourceToJSON(input, output string, indent string, comments, positions, references bool) error {
-	marshaller := NewMarshaller(comments, positions, references)
+type Options struct {
+	WithPositions  bool
+	WithComments   bool
+	WithReferences bool
+	WithImports    bool
+}
+
+func SourceToJSON(input, output string, indent string, options Options) error {
+	marshaller := NewMarshaller(options)
 
 	mode := parser.SkipObjectResolution
-	if comments {
+	if options.WithComments {
 		mode |= parser.ParseComments
 	}
 	tree, err := parser.ParseFile(marshaller.FileSet(), input, nil, mode)
@@ -39,7 +46,7 @@ func SourceToJSON(input, output string, indent string, comments, positions, refe
 	return nil
 }
 
-func JSONToSource(input, output string, comments, positions, references bool) error {
+func JSONToSource(input, output string, options Options) error {
 	inFile, err := os.Open(input)
 	if err != nil {
 		return err
@@ -55,7 +62,7 @@ func JSONToSource(input, output string, comments, positions, references bool) er
 		return err
 	}
 
-	unmarshaler := NewUnmarshaller(comments, positions, references)
+	unmarshaler := NewUnmarshaller(options)
 	tree := unmarshaler.UnmarshalFileNode(&node)
 
 	outFile, err := os.Create(output)

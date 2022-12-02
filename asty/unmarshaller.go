@@ -14,21 +14,16 @@ func init() {
 }
 
 type Unmarshaller struct {
-	WithPositions  bool
-	WithComments   bool
-	WithReferences bool
-
+	Options
 	fset       *token.FileSet
 	references map[int]any
 }
 
-func NewUnmarshaller(withComments, withPositions, withReferences bool) *Unmarshaller {
+func NewUnmarshaller(options Options) *Unmarshaller {
 	return &Unmarshaller{
-		WithComments:   withComments,
-		WithPositions:  withPositions,
-		WithReferences: withReferences,
-		fset:           token.NewFileSet(),
-		references:     make(map[int]any),
+		Options:    options,
+		fset:       token.NewFileSet(),
+		references: make(map[int]any),
 	}
 }
 
@@ -751,12 +746,16 @@ func (um *Unmarshaller) UnmarshalDeclNodes(nodes []IDeclNode) []ast.Decl {
 func (um *Unmarshaller) UnmarshalFileNode(node *FileNode) *ast.File {
 	return wrapUnmarshal(um, node, func() *ast.File {
 		um.fset = node.FileSet
+		var imports []*ast.ImportSpec = nil
+		if um.WithImports {
+			imports = um.UnmarshalImportSpecNodes(node.Imports)
+		}
 		return &ast.File{
 			Doc:        um.UnmarshalCommentGroupNode(node.Doc),
 			Package:    um.UnmarshalPositionNode(node.Package),
 			Name:       um.UnmarshalIdentNode(node.Name),
 			Decls:      um.UnmarshalDeclNodes(node.Decls),
-			Imports:    um.UnmarshalImportSpecNodes(node.Imports),
+			Imports:    imports,
 			Unresolved: um.UnmarshalIdentNodes(node.Unresolved),
 			Comments:   um.UnmarshalCommentGroupNodes(node.Comments),
 		}
