@@ -60,21 +60,22 @@ func main() {
 		output = os.Stdout.Name()
 	}
 
+	options := asty.Options{
+		WithImports:    imports,
+		WithComments:   comments,
+		WithPositions:  positions,
+		WithReferences: references,
+	}
+
 	switch args[1] {
 	case "go2json":
 		indentStr := strings.Repeat(" ", indent)
-		options := asty.Options{
-			WithImports:    imports,
-			WithComments:   comments,
-			WithPositions:  positions,
-			WithReferences: references,
-		}
 		err := asty.SourceToJSON(input, output, indentStr, options)
 		if err != nil {
 			printError(err)
 		}
 	case "json2go":
-		err := asty.JSONToSource(input, output, comments, positions, references)
+		err := asty.JSONToSource(input, output, options)
 		if err != nil {
 			printError(err)
 		}
