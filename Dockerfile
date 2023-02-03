@@ -1,4 +1,4 @@
-FROM golang:1.19-alpine3.16 as builder
+FROM golang:1.20-alpine3.17 as builder
 
 WORKDIR $GOPATH/src/github.com/asty-org/asty
 
@@ -10,7 +10,7 @@ RUN go clean -modcache && \
 RUN make
 RUN cp bin/asty /
 
-FROM alpine:3.16
+FROM alpine:3.17
 
 COPY --from=builder /asty /asty
 
