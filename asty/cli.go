@@ -5,7 +5,6 @@ import (
 	"go/parser"
 	"go/printer"
 	"go/token"
-	"os"
 )
 
 type Options struct {
@@ -22,24 +21,29 @@ func SourceToJSON(input, output string, indent string, options Options) error {
 	if options.WithComments {
 		mode |= parser.ParseComments
 	}
-	tree, err := parser.ParseFile(marshaller.FileSet(), input, nil, mode)
+
+	inFile, closeIn, err := OpenRead(input)
+	if err != nil {
+		return err
+	}
+	defer closeIn()
+
+	tree, err := parser.ParseFile(marshaller.FileSet(), input, inFile, mode)
 	if err != nil {
 		return err
 	}
 
 	node := marshaller.MarshalFile(tree)
 
-	outFile, err := os.Create(output)
+	outFile, closeOut, err := OpenOrCreateWrite(output)
 	if err != nil {
 		return err
 	}
+	defer closeOut()
+
 	encoder := json.NewEncoder(outFile)
 	encoder.SetIndent("", indent)
 	err = encoder.Encode(node)
-	if err != nil {
-		return err
-	}
-	err = outFile.Close()
 	if err != nil {
 		return err
 	}
@@ -47,17 +51,15 @@ func SourceToJSON(input, output string, indent string, options Options) error {
 }
 
 func JSONToSource(input, output string, options Options) error {
-	inFile, err := os.Open(input)
+	inFile, closeIn, err := OpenRead(input)
 	if err != nil {
 		return err
 	}
+	defer closeIn()
+
 	var node FileNode
 	decoder := json.NewDecoder(inFile)
 	err = decoder.Decode(&node)
-	if err != nil {
-		return err
-	}
-	err = inFile.Close()
 	if err != nil {
 		return err
 	}
@@ -65,15 +67,12 @@ func JSONToSource(input, output string, options Options) error {
 	unmarshaler := NewUnmarshaller(options)
 	tree := unmarshaler.UnmarshalFileNode(&node)
 
-	outFile, err := os.Create(output)
+	outFile, closeOut, err := OpenOrCreateWrite(output)
 	if err != nil {
 		return err
 	}
+	defer closeOut()
 	err = printer.Fprint(outFile, unmarshaler.FileSet(), tree)
-	if err != nil {
-		return err
-	}
-	err = outFile.Close()
 	if err != nil {
 		return err
 	}
@@ -91,15 +90,13 @@ func Loop(input, output string, comments bool) error {
 		return err
 	}
 
-	outFile, err := os.Create(output)
+	outFile, closeOut, err := OpenOrCreateWrite(output)
 	if err != nil {
 		return err
 	}
+	defer closeOut()
+
 	err = printer.Fprint(outFile, fs, tree)
-	if err != nil {
-		return err
-	}
-	err = outFile.Close()
 	if err != nil {
 		return err
 	}

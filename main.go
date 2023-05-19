@@ -3,9 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/asty-org/asty/asty"
 	"os"
 	"strings"
+
+	"github.com/asty-org/asty/asty"
 )
 
 const UsageString = `Usage: asty <command> [flags]
@@ -50,14 +51,6 @@ func main() {
 	err := fs.Parse(args[2:])
 	if err != nil {
 		printError(err)
-	}
-
-	if input == "" {
-		input = os.Stdin.Name()
-	}
-
-	if output == "" {
-		output = os.Stdout.Name()
 	}
 
 	options := asty.Options{
