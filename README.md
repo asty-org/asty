@@ -14,7 +14,7 @@ _Not another JSON parser!_
 
 Marshals golang [AST](https://pkg.go.dev/go/ast) into JSON and unmarshals it back from JSON.
 
-It allows building pattern matching, statistical analysis, language transformation, search/data-mine/anything algorithms 
+It allows building pattern matching, statistical analysis, language transformation, search/data-mine/anything algorithms
 for golang with any other language (I like to do it with python. Check out [asty-python](https://github.com/asty-org/asty-python))
 
 ## Example
@@ -22,6 +22,7 @@ for golang with any other language (I like to do it with python. Check out [asty
 [Try it!](https://asty-org.github.io/)
 
 Input golang source
+
 ```golang
 package main
 
@@ -33,6 +34,7 @@ func main() {
 ```
 
 Ouput AST in JSON
+
 ```json
 {
   "NodeType": "File",
@@ -106,6 +108,16 @@ Ouput AST in JSON
 }
 ```
 
+## Install
+
+Install `asty` under `$GOPATH/bin`
+
+```bash
+go install github.com/asty-org/asty
+
+asty -h
+```
+
 ## Building
 
 Just `make`
@@ -114,11 +126,13 @@ If you want to do it differently use `go build`
 ## Usage
 
 Convert AST to JSON
+
 ```bash
 asty go2json -input <input.go> -output <output.json>
 ```
 
 Convert JSON to AST
+
 ```bash
 asty json2go -input <input.json> -output <output.go>
 ```
@@ -133,19 +147,19 @@ docker run astyorg/asty go2json -input <input.go> -output <output.json>
 
 ## Development principles
 
-- Make json output as close to real golang structures as possible. There is no additional logic introduced. 
-No normalization. No reinterpretation. The only things that were introduced are the names of some enum values.
-- Make it very explicit. No reflection. No listing of fields. This is done to facilitate future maintenance. 
-If something will be changed in future versions of golang this code will probably break compile-time.
-- Keep polymorphism in JSON structure. If some field references _expression_ then particular type will be 
-discriminated from object type name stored in separate field.
+- Make json output as close to real golang structures as possible. There is no additional logic introduced.
+  No normalization. No reinterpretation. The only things that were introduced are the names of some enum values.
+- Make it very explicit. No reflection. No listing of fields. This is done to facilitate future maintenance.
+  If something will be changed in future versions of golang this code will probably break compile-time.
+- Keep polymorphism in JSON structure. If some field references _expression_ then particular type will be
+  discriminated from object type name stored in separate field.
 
 ## Other solutions
 
-- https://github.com/ReconfigureIO/goblin reinterpret some structures (trying to simplify). 
-Out of maintenance for a long time. Still works in some forks.
+- https://github.com/ReconfigureIO/goblin reinterpret some structures (trying to simplify).
+  Out of maintenance for a long time. Still works in some forks.
 - https://github.com/CreativeInquiry/go2json tries to parse golang code with parser written in javascript.
-Also lacks maintenance. Developed for particular use case of HaXe traspiler.
+  Also lacks maintenance. Developed for particular use case of HaXe traspiler.
 
 ## Article
 
